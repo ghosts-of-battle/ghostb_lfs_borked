@@ -13,16 +13,14 @@ files = [
     "extras/keys",
     "AUTHORS.txt",
     "gobp2_256_g.paa",
-    "gobp2_256.paa"
+    "gobp2_256.paa",
     ]
 
 exclude = ["*.psd", "*.png", "*.tga"]
 
-
 modname = "{{name}}"
 key_name = "{{prefix}}_{{version}}"
 authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
-
 
 check = [
     "!compile_scripts"
@@ -38,7 +36,6 @@ releasebuild = [
 
 [header_exts]
 version = "{{git \"id 8\"}}"
-
 
 [scripts.compile_scripts]
 steps_windows = [
@@ -61,4 +58,3 @@ steps_linux = [
     "echo 'Compiling Arma Scripts does not work yet on Linux'"
 ]
 only_release = true
-show_output = true

@@ -112,7 +112,7 @@ class CfgVehicles {
         transportAmmo=30000;
         supplyRadius=10;
     };
-/*
+    /*
     class GVAR(arsenalw): NATO_Box_Base {
         scope = 2;
         scopeCurator = 2;
@@ -153,8 +153,7 @@ class CfgVehicles {
         transportAmmo=30000;
         supplyRadius=10;
     };
- */
-   /*  class GVAR(arsenali): NATO_Box_Base {
+    class GVAR(arsenali): NATO_Box_Base {
         scope = 2;
         scopeCurator = 2;
         author = QAUTHOR;
@@ -193,7 +192,8 @@ class CfgVehicles {
         };
         transportAmmo=30000;
         supplyRadius=10;
-    }; */
+    };
+     */
 
 
     class ACE_Item_Vector;
@@ -298,5 +298,42 @@ class CfgVehicles {
             };
         };
     };
+    
+	class O_A_officer_F;
+	class O_A_soldier_F;
+	class ghostb_main_O_A_officer_F: O_A_officer_F {
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		hiddenSelectionsMaterials[]= {
+			"\z\ghostb\addons\equipment\uniforms\data\officer_noinsignia.rvmat"
+		};
+	};
+	class ghostb_main_Aegis_O_Soldier_03_base: O_A_soldier_F {
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;
+		displayName="Luchnik Fatigues";
+		descriptionShort="Luchnik Fatigues";
+		author="Jamie of the A3 Aegis Team";
+		uniformClass="ghostb_main_U_Aegis_O_Soldier_03_base";
+		model="\z\ghostb\addons\equipment\Uniforms\Aegis_O_Soldier_03.p3d";
+		hiddenSelections[]= {
+			"camo",
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]= {
+			"\z\ghostb\addons\equipment\Uniforms\Data\clothing2_rutaiga_CO.paa",
+			"\z\ghostb\addons\equipment\Uniforms\Data\TacGloves_grn_CO.paa",
+			"\A3\Characters_F\OPFOR\Data\clothing_co.paa"
+		};
+	};
+	class ghostb_main_Aegis_O_Soldier_04_base: ghostb_main_Aegis_O_Soldier_03_base {
+		displayName="Luchnik Fatigues (Rolled-up)";
+		descriptionShort="Luchnik Fatigues";
+		uniformClass="ghostb_main_U_Aegis_O_Soldier_04_base";
+		model="\z\ghostb\addons\equipment\Uniforms\Aegis_O_Soldier_04.p3d";
+	};
 };
 

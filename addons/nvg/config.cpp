@@ -10,7 +10,6 @@ class CfgPatches {
             "ghostb_common",
             "cba_main",
             "ace_nightvision",
-            "ace_compat_rhs_usf3",
             "BettIR_Core"
         };
         author = "Ghost";
@@ -23,4 +22,3 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
-#include "BettIR.hpp"

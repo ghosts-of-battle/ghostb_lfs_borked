@@ -16,18 +16,33 @@ ADDON = true;
 [
   "ghostb_nvg_Effect",
   "LIST",
-  ["NVG Effect", "Green Phosphor (no effect).\n White Phosphor (White Phosphor)"],
+  [
+    "NVG Effect",
+    "
+    Green Phosphor (no effect).\n
+    Modern Warfare (greenish tint WP)\n
+    White Phosphor (White Phosphor)
+    "
+  ],
   COMPONENT_NAME,
   [
     [
       "",
       "gpEffect",
-      "wpEffect"
+      "wpEffect",
+      "mwEffect",
+      "afEffect",
+      "ofEffect",
+      "rfEffect"
     ],
     [
       "None",
       "Green Phosphor",
-      "White Phosphor"
+      "White Phosphor",
+      "Modern Warfare",
+      "Amber Filter",
+      "Orange Filter",
+      "Red Filter"
     ],
     0
   ]

@@ -30,21 +30,6 @@ class CfgWeapons {
         ace_nightvision_bluRadius=-1;
         ace_nightvision_border=QPATHTOF(data\bi.paa);
     };
-    class rhsusf_ANPVS_14: NVGoggles {
-        modelOptics="";
-        ace_nightvision_bluRadius=-1;
-        ace_nightvision_border=QPATHTOF(data\single.paa);
-    };
-    class rhsusf_ANPVS_15: rhsusf_ANPVS_14 {
-        modelOptics="";
-        ace_nightvision_bluRadius=-1;
-        ace_nightvision_border=QPATHTOF(data\bi.paa);
-    };
-    class rhs_1PN138: NVGoggles {
-        modelOptics="";
-        ace_nightvision_bluRadius=-1;
-        ace_nightvision_border=QPATHTOF(data\single.paa);
-    };
     class O_NVGoggles_hex_F: NVGoggles {
         modelOptics="";
         ace_nightvision_bluRadius=-1;

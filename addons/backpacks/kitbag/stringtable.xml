@@ -8,13 +8,13 @@
 		<Container name="Backpacks_Kitbag">
 			<!-- =============================================================================== -->
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_Title">
-				<Original>(GHOST) Backpacks Carryall</Original>
+				<English>(GHOST) Backpacks Carryall</English>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_Author">
-				<Original>Ghost-Team</Original>
+				<English>Ghost-Team</English>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_URL">
-				<Original>https://purplesmoke.info</Original>
+				<English>https://purplesmoke.info</English>
 			</Key>
 			<!-- =============================================================================== -->
 		</Container>
@@ -24,123 +24,123 @@
 		<Container name="Kitbag">
 			<!-- =============================================================================== -->
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BLACK">
-				<Original>(GHOST) Kitbag (Black)</Original>
+				<English>(GHOST) Kitbag (Black)</English>
 				<German>Seesack (Schwarz)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BLACK_MEDIC">
-				<Original>(GHOST) Kitbag (Black MED)</Original>
+				<English>(GHOST) Kitbag (Black MED)</English>
 				<German>Seesack (Schwarz MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BW_D">
-				<Original>(GHOST) Kitbag (BW Tropic)</Original>
+				<English>(GHOST) Kitbag (BW Tropic)</English>
 				<German>Seesack (BW Tropen)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BW_D_MEDIC">
-				<Original>(GHOST) Kitbag (BW Tropic MED)</Original>
+				<English>(GHOST) Kitbag (BW Tropic MED)</English>
 				<German>Seesack (BW Tropen MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BW_W">
-				<Original>(GHOST) Kitbag (BW Camo)</Original>
+				<English>(GHOST) Kitbag (BW Camo)</English>
 				<German>Seesack (BW Fleck)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_BW_W_MEDIC">
-				<Original>(GHOST) Kitbag (BW Camo MED)</Original>
+				<English>(GHOST) Kitbag (BW Camo MED)</English>
 				<German>Seesack (BW Fleck MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_COYOTE">
-				<Original>(GHOST) Kitbag (Coyote)</Original>
+				<English>(GHOST) Kitbag (Coyote)</English>
 				<German>Seesack (Coyote)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_COYOTE_MEDIC">
-				<Original>(GHOST) Kitbag (Coyote MED)</Original>
+				<English>(GHOST) Kitbag (Coyote MED)</English>
 				<German>Seesack (Coyote MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_DARK">
-				<Original>(GHOST) Kitbag (Green Dark)</Original>
+				<English>(GHOST) Kitbag (Green Dark)</English>
 				<German>Seesack (Grün Dunkel)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_DARK_MEDIC">
-				<Original>(GHOST) Kitbag (Green Dark MED)</Original>
+				<English>(GHOST) Kitbag (Green Dark MED)</English>
 				<German>Seesack (Grün Dunkel MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_DGTL">
-				<Original>(GHOST) Kitbag (Green Digital)</Original>
+				<English>(GHOST) Kitbag (Green Digital)</English>
 				<German>Seesack (Grün Digital)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_DGTL_MEDIC">
-				<Original>(GHOST) Kitbag (Green Digital MED)</Original>
+				<English>(GHOST) Kitbag (Green Digital MED)</English>
 				<German>Seesack (Grün Digital MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_RNGR">
-				<Original>(GHOST) Kitbag (Green Ranger)</Original>
+				<English>(GHOST) Kitbag (Green Ranger)</English>
 				<German>Seesack (Grün Ranger)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_GREEN_RNGR_MEDIC">
-				<Original>(GHOST) Kitbag (Green Ranger MED)</Original>
+				<English>(GHOST) Kitbag (Green Ranger MED)</English>
 				<German>Seesack (Grün Ranger MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_HEX_CAMO">
-				<Original>(GHOST) Kitbag (Hex Camo)</Original>
+				<English>(GHOST) Kitbag (Hex Camo)</English>
 				<German>Seesack (Hex Camo)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_HEX_CAMO_MEDIC">
-				<Original>(GHOST) Kitbag (Hex Camo MED)</Original>
+				<English>(GHOST) Kitbag (Hex Camo MED)</English>
 				<German>Seesack (Hex Camo MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_HEX_GREEN">
-				<Original>(GHOST) Kitbag (Hex Green)</Original>
+				<English>(GHOST) Kitbag (Hex Green)</English>
 				<German>Seesack (Hex Grün)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_HEX_GREEN_MEDIC">
-				<Original>(GHOST) Kitbag (Hex Green MED)</Original>
+				<English>(GHOST) Kitbag (Hex Green MED)</English>
 				<German>Seesack (Hex Grün MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MARPAT_D">
-				<Original>(GHOST) Kitbag (MARPAT-D)</Original>
+				<English>(GHOST) Kitbag (MARPAT-D)</English>
 				<German>Seesack (MARPAT-D)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MARPAT_D_MEDIC">
-				<Original>(GHOST) Kitbag (MARPAT-D MED)</Original>
+				<English>(GHOST) Kitbag (MARPAT-D MED)</English>
 				<German>Seesack (MARPAT-D MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MARPAT_W">
-				<Original>(GHOST) Kitbag (MARPAT-W)</Original>
+				<English>(GHOST) Kitbag (MARPAT-W)</English>
 				<German>Seesack (MARPAT-W)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MARPAT_W_MEDIC">
-				<Original>(GHOST) Kitbag (MARPAT-W MED)</Original>
+				<English>(GHOST) Kitbag (MARPAT-W MED)</English>
 				<German>Seesack (MARPAT-W MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MTP">
-				<Original>(GHOST) Kitbag (MTP)</Original>
+				<English>(GHOST) Kitbag (MTP)</English>
 				<German>Seesack (MTP)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_MTP_MEDIC">
-				<Original>(GHOST) Kitbag (MTP MED)</Original>
+				<English>(GHOST) Kitbag (MTP MED)</English>
 				<German>Seesack (MTP MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_OCP">
-				<Original>(GHOST) Kitbag (OCP)</Original>
+				<English>(GHOST) Kitbag (OCP)</English>
 				<German>Seesack (OCP)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_OCP_MEDIC">
-				<Original>(GHOST) Kitbag (OCP MED)</Original>
+				<English>(GHOST) Kitbag (OCP MED)</English>
 				<German>Seesack (OCP MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_UCP">
-				<Original>(GHOST) Kitbag (UCP)</Original>
+				<English>(GHOST) Kitbag (UCP)</English>
 				<German>Seesack (UCP)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_UCP_MEDIC">
-				<Original>(GHOST) Kitbag (UCP MED)</Original>
+				<English>(GHOST) Kitbag (UCP MED)</English>
 				<German>Seesack (UCP MED)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_WDL">
-				<Original>(GHOST) Kitbag (Wood Classic)</Original>
+				<English>(GHOST) Kitbag (Wood Classic)</English>
 				<German>Seesack (Wald Klassisch)</German>
 			</Key>
 			<Key ID="STR_GHOSTB_Backpacks_Kitbag_01_WDL_MEDIC">
-				<Original>(GHOST) Kitbag (Wood Classic MED)</Original>
+				<English>(GHOST) Kitbag (Wood Classic MED)</English>
 				<German>Seesack (Wald Klassisch MED)</German>
 			</Key>
 			<!-- =============================================================================== -->
