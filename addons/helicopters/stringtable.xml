@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Arma_Extended_Environment">
+
+	<!-- ####################################################################################### -->
+	<Package name="ghostb_Helicopters">
+
+		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<Container name="Helicopters">
+			<!-- =============================================================================== -->
+			<Key ID="STR_ghostb_Helicopters_Title">
+				<Original>Ghost Helicopters</Original>
+			</Key>
+			<Key ID="STR_ghostb_Helicopters__Author">
+				<Original>Ghost-Team</Original>
+			</Key>
+			<Key ID="STR_ghostb_Helicopters__URL">
+				<Original>https://github.com/ghosts-of-battle/mods</Original>
+			</Key>
+			<!-- =============================================================================== -->
+		</Container>
+		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+	</Package>
+	<!-- ####################################################################################### -->
+
+</Project>
