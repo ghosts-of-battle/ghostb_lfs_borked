@@ -2,7 +2,7 @@
 <Project name="GHOSTB">
     <Package name="Main_Menu">
         <Key ID="STR_GHOSTB_Main_Menu_SpotlightHeader">
-            <English>Ghost Air Assault Unit (GHOST)</English>
+            <English>Ghost of Battle (GHOST)</English>
         </Key>
         <Key ID="STR_GHOSTB_Main_Menu_SpotlightJoin">
             <English>Join</English>

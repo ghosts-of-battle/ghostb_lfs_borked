@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: veteran29
- * Join Ghost Air Assault Unit (GHOST) server from main menu.
+ * Join Ghost of Battle (GHOST) server from main menu.
  * Based on article from KillZonekid
  *
  * Arguments:
@@ -26,7 +26,7 @@ if (isNil "CBA_fnc_log") then {
 // Disable Enchanced Multiplayer Menu for compatiblity with this script
 uiNamespace setVariable ["EMM_multiplayerMenu_enabled", false];
 
-INFO("Auto joining to Ghost Air Assault Unit (GHOST) Operations Server");
+INFO("Auto joining to Ghost of Battle (GHOSTB) Operations Server");
 
 GVAR(serverAddress) = "38.103.170.18";
 GVAR(serverPort) = "2302";

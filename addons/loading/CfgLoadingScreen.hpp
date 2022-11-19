@@ -1,7 +1,7 @@
 #define LOADING_SCREEN_CLASS(className,authorName) \
     class className { \
         author = QUOTE(authorName); \
-        path = QPATHTOF(ui\loading\##className##.paa); \
+        path = QPATHTOF(ui\##className##.paa); \
     }
 
 class GVAR(CfgLoadingScreen) {
