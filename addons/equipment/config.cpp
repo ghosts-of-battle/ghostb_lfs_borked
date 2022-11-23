@@ -19,6 +19,8 @@ class CfgPatches {
             QGVAR(diver_base_F)
         };
         weapons[] = {
+            QGVAR(xm157_prototype),
+            QGVAR(optic_DMS),
             QGVAR(Vector_Designator),
             QGVAR(optic_Nightstalker),
             QGVAR(optic_AMS_base),
@@ -29,6 +31,7 @@ class CfgPatches {
             QGVAR(optic_AMSTI),
             QGVAR(optic_AMSTI_khk),
             QGVAR(optic_AMSTI_snd),
+            QGVAR(xm157_ace),
             QGVAR(rebreather),
             QGVAR(Wetsuit)
         };
@@ -39,7 +42,8 @@ class CfgPatches {
             "cba_xeh",
             "ace_vector",
             "A3_Weapons_F",
-            "cba_jr"
+            "cba_jr",
+            "ace_xm157"
         };
         VERSION_CONFIG;
         authors[] = {"MitchJC"};
@@ -50,68 +54,10 @@ class CfgFunctions {
     #include "CfgFunctions.hpp"
 };
 
+#include "CfgEventHandlers.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
-#include "CfgEventHandlers.hpp"
 
-class Extended_InitPost_EventHandlers {
-    class ReammoBox_F {
-        class Storage_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Storage_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Car {
-        class Car_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Car_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Tank {
-        class Tank_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Tank_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Motorcycle {
-        class Motorcycle_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Motorcycle_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Helicopter {
-        class Helicopter_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Helicopter_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Plane {
-        class Plane_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Plane_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-    class Ship_F {
-        class Ship_MedicalSupplies {
-            init = "[_this select 0] call GHOSTB_fnc_MedicalSupplies";
-        };
-        class Ship_Ammobox {
-            init = "[_this select 0] call GHOSTB_fnc_Ammobox";
-        };
-    };
-};

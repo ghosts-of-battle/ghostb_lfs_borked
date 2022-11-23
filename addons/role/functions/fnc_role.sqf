@@ -1,16 +1,12 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 if (isDedicated) exitwith {};
 if!(local player)exitWith{};
 if (hasinterface) then {
-    _playerUID = getplayerUID player;
 
-    switch (true) do {
-        case (_playerUID in ROLES_PILOT) : {
-            player setUnitTrait ["Pilot", true, true];
-            Hint "Pilot";
-        };
-    };
+private _playerUID = getplayerUID player;
+
+
     switch (true) do {
         case (_playerUID in ROLES_MEDIC) : {
             player setVariable ["ace_medical_medicclass", 1, true];
@@ -39,9 +35,7 @@ if (hasinterface) then {
     };
     switch (true) do {
         case (_playerUID in ROLES_COMM) : {
-            player setVariable ["canUseSSScas", true, true];
             player setVariable ["canUseSSstrans", true, true];
-            player setVariable ["canUseSSSarty", true, true];
             player setUnitTrait ["UAVHacker", true];
             [
                 {player setVariable["draWhitelisted",TRUE,TRUE];},
@@ -56,6 +50,11 @@ if (hasinterface) then {
             ] call CBA_fnc_waitAndExecute;
 
             Hint "Communications";
+        };
+        default {
+            player setVariable ["canUseSSScas", false, true];
+            player setVariable ["canUseSSstrans", false, true];
+            player setVariable ["canUseSSSarty", false, true];
         };
     };
     switch (true) do {

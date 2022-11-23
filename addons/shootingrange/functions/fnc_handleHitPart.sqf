@@ -61,7 +61,7 @@ if !(_target in _targets) exitWith {
 
 // Exit if not direct hit (does not seem to count bullet bouncing)
 if (!_directHit) exitWith {
-    hint "(GHOST) Debug: Indirect Hit";
+    hint "[GHOST] Debug: Indirect Hit";
 };
 
 // Exit if hit by someone else

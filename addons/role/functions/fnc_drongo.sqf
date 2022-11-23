@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 // _function	The function you wish to execute.  <CODE>
 // _args	Parameters passed to the function executing.  (optional) <ANY>

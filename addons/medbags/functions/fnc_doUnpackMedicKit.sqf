@@ -66,21 +66,12 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_elasticBandage", 14, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_packingBandage", 14, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_quikClot", 14, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "ACE_salineIV_500", 08, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_salineIV_500", 10, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_tourniquet", 08, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_Painkiller", 06, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_chestSeal", 04, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_larynx", 06, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_guedel", 06, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_splint", 08, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_aatKit", 04, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "KAT_Empty_bloodIV_500", 04, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_fieldDressing", 06, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_Painkiller", 01, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_tourniquet", 04, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_EarPlugs", 02, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_IO_FAST", 06, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "kat_IV_16", 06, _order, _overflow] call EFUNC(common,addItem);
     };
 
     if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {

@@ -1,6 +1,5 @@
 
-#include "script_component.hpp"
-#define ROLE_SETTINGS_CAT COMPONENT_NAME
+#define ROLE_SETTINGS_CAT "Role & Role: Roles"
 #define ROLE_HINT "list of steam user ID's"
 // Roles
 [
@@ -47,7 +46,6 @@
     [], // data for this setting:
     1 // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
 ] call CBA_fnc_addSetting;
-
 
 [
     "ROLES_SRCOMM", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.

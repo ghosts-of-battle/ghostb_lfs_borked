@@ -126,3 +126,83 @@
 #define POS_Y(var1) (POS_H(var1) + Y_OFF)
 
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
+
+#define MACRO_GOGGLES_COMMON \
+    dlc = QUOTE(PREFIX); \
+    scope = 2; \
+    identityTypes[] = {}; \
+    model = QPATHTOF(data\goggles.p3d); \
+    mass = 2; \
+    ace_overlay = ""; \
+    ace_resistance = 2;
+
+#define MACRO_ITEM_COMMON \
+        dlc = QUOTE(PREFIX); \
+        scope = 2; \
+        scopeCurator = 2; \
+        scopeArsenal=2;
+
+        // Items
+#define ITEMS_2(var) QUOTE(var), QUOTE(var)
+#define ITEMS_3(var) QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_4(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_5(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_6(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_7(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_8(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_9(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_10(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_11(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+#define ITEMS_12(var) QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var), QUOTE(var)
+
+#define MACRO_ADDWEAPON(WEAPON,COUNT) \
+    class _xx_##WEAPON { \
+        weapon = #WEAPON; \
+        count = COUNT; \
+    }
+
+#define MACRO_ADDITEM(ITEM,COUNT) \
+    class _xx_##ITEM { \
+        name = #ITEM; \
+        count = COUNT; \
+    }
+
+#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) \
+    class _xx_##MAGAZINE { \
+        magazine = #MAGAZINE; \
+        count = COUNT; \
+    }
+
+#define MACRO_ADDBACKPACK(BACKPACK,COUNT) \
+    class _xx_##BACKPACK { \
+        backpack = #BACKPACK; \
+        count = COUNT; \
+    }
+
+#define MACRO_LANDVEHICLE_CARGO \
+    class TransportBackpacks {}; \
+    class TransportItems { \
+        MACRO_ADDITEM(FirstAidKit,8); \
+    }; \
+    class TransportMagazines { \
+        MACRO_ADDMAGAZINE(SmokeShell,6); \
+        MACRO_ADDMAGAZINE(SmokeShellBlue,2); \
+        MACRO_ADDMAGAZINE(SmokeShellRed,2); \
+    }; \
+    class TransportWeapons {};
+
+#define MACRO_AIRVEHICLE_CARGO \
+    class TransportBackpacks { \
+        MACRO_ADDBACKPACK(B_Parachute,2); \
+    }; \
+    class TransportItems { \
+        MACRO_ADDITEM(FirstAidKit,8); \
+        MACRO_ADDITEM(ItemGPS,1); \
+        MACRO_ADDITEM(ToolKit,1); \
+    }; \
+    class TransportMagazines { \
+        MACRO_ADDMAGAZINE(SmokeShell,6); \
+        MACRO_ADDMAGAZINE(SmokeShellBlue,2); \
+        MACRO_ADDMAGAZINE(SmokeShellRed,2); \
+    }; \
+    class TransportWeapons {};

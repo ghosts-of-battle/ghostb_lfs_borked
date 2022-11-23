@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-call FUNC(role);
 
 player addEventHandler ["Respawn", {
   // Add new unit to zeus

@@ -33,7 +33,7 @@ Public: Yes
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ghostb_medbags_Trauma","ACE_bodyBag","ghostb_medbags_FirstAid","ghostb_medbags_DrugKit","ghostb_medbags_MedicKit","Attachable_Helistretcher"],
+    ["ACE_adenosine","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","ACE_bloodIV","ACE_bloodIV_500","ACE_bodyBag","ghostb_medbags_DrugKit","ACE_epinephrine","ghostb_medbags_FirstAid","ghostb_medbags_MedicKit","ACE_morphine","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_splint","ACE_surgicalKit","ACE_tourniquet","ghostb_medbags_Trauma","ACE_bloodIV_250"],
     "Ghost Medical",
     "\z\ace\addons\medical_gui\data\categories\medication.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

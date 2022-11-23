@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: veteran29
- * Join Ghost of Battle (GHOST) server from main menu.
+ * Join Ghost of Battle [GHOST] server from main menu.
  * Based on article from KillZonekid
  *
  * Arguments:

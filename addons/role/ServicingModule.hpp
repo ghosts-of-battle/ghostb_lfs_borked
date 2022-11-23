@@ -1,15 +1,14 @@
-#include "script_component.hpp"
-class ghostb_Modulerole: Module_F {
+class DPSO_ModuleServicing: Module_F {
     scope = 2;
     displayName = "Role Selection";
     icon = "\a3\modules_f_bootcamp\Data\IconBootcampStage.paa";
-    category = QPREFIX;
-    function = QFUNC(pick),;
+    category = "Rank & Role";
+    function = FUNC(pick);
     functionPriority = 4;
     isGlobal = 1;
     isTriggerActivated = 0;
     isDisposable = 0;
-    is3den = 0;
+    is3DEN = 0;
     class Attributes: AttributesBase {
         class ModuleDescription: ModuleDescription {};
     };

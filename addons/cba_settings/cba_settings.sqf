@@ -1,10 +1,18 @@
-// Ghost - Role
-force Roles_comm = """76561197965231284"",""76561198000002705"",""76561198020655265"",""76561198058838936"",""76561198167076082"",""76561198135204306"",""76561198300692603"",""76561198015722757""";
-force Roles_eng = "";
-force Roles_medic = """76561198227272616"",""76561199276306489"",""76561199226125452"",""76561198158138010"",""76561198024469454"",""76561198982480726"",""76561198193671702"",""76561198283975252"",""76561198352762857"",""76561198058838936"",""76561198084572170""";
+// GHOST - Role
+force Roles_comm = """76561198000002705""";
+force Roles_eng = """76561198000002705""";
+force Roles_medic = """76561198000002705""";
 force Roles_srcomm = """76561198000002705""";
-force Roles_sreng = "";
-force Roles_srmedic = "";
+force Roles_sreng = """76561198000002705""";
+force Roles_srmedic = """76561198000002705""";
+
+// GHOST - Rank
+force ranks_captain = "";
+force ranks_colonel = "";
+force ranks_corporal = "";
+force ranks_lieutenant = """76561198000002705""";
+force ranks_major = "";
+force ranks_sergeant = "";
 
 //----------------------------------------------------------------------------//
 
@@ -697,7 +705,7 @@ force tfar_radiocode_independent = "_independent";
 force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
-force TFAR_SameSRFrequenciesForSide = false;
+force TFAR_SameSRFrequenciesForSide = true;
 force TFAR_setting_defaultFrequencies_lr_east = "";
 force TFAR_setting_defaultFrequencies_lr_independent = "";
 force TFAR_setting_defaultFrequencies_lr_west = "";
@@ -735,25 +743,20 @@ Fat_Lurch_ShowEl = true;
 Fat_Lurch_ShowNorth = true;
 Fat_Lurch_ShowTarget = true;
 
-// UH-60M
-force vtx_ace_viv_loadDistance = 15;
-force vtx_ace_viv_timeFactor = 1;
-vtx_uh60_anvishud_defaultMode = -1;
-vtx_uh60_anvishud_settingBrightness = 0.6;
-vtx_uh60_anvishud_settingColor = [0.082,0.608,0.039];
-vtx_uh60_flir_setting_AimSlewBlockMouse = true;
-vtx_uh60_flir_setting_AimSlewSpeed = 1;
-vtx_uh60_flir_setting_AimXFactor = 1;
-force vtx_uh60_flir_setting_animateTurret = true;
-vtx_uh60_flir_setting_KeySlewSpeed = 1;
-vtx_uh60_flir_setting_KeyXFactor = 1;
-force vtx_uh60_flir_setting_syncDelay = 0.015;
-vtx_uh60_hoist_setting_useAttachScript = true;
-vtx_uh60_sfmPlus_showDamageHints = true;
-vtx_uh60_sfmPlusStabilatorEnabled = 1;
-vtx_uh60_ui_showDebugMessages = false;
-vtx_uh60m_enabled_waypts = true;
-vtx_uh60m_simpleCollective = false;
-vtx_uh60m_simpleStartup = false;
-vtx_uh60m_trackIR_interaction_cursor = false;
-vtx_uh60m_trackIR_interaction_cursorSensitivity = 2.5;
+// Simplex Support Services
+force SSS_setting_adminFullAccess = false;
+SSS_setting_adminLimitSide = false;
+force SSS_setting_cleanupCrew = true;
+force SSS_setting_deleteVehicleOnEntityRemoval = false;
+force SSS_setting_directActionRequirement = false;
+force SSS_setting_GiveUAVTerminal = true;
+force SSS_setting_milsimModeArtillery = true;
+force SSS_setting_milsimModeCAS = true;
+force SSS_setting_milsimModeLogistics = true;
+force SSS_setting_milsimModeTransport = true;
+force SSS_setting_removeSupportOnVehicleDeletion = true;
+force SSS_setting_resetVehicleOnRTB = true;
+force SSS_setting_restoreCrewOnRTB = true;
+force SSS_setting_slingLoadSearchRadius = 100;
+force SSS_setting_slingLoadWhitelist = "";
+SSS_setting_useChatNotifications = false;

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Argument:
  * 0: Action name <STRING>
@@ -28,15 +28,16 @@
 if (isDedicated) exitWith {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbFIX = [
-    "ghostbfix",
+private _oetaFIX = [
+    "oetafix",
     "FIX Perms",
     "", {
         player call FUNC(role);
+        player call FUNC(rank);
     }, {true}, {},
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbFIX] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _oetaFIX] call ACE_interact_menu_fnc_addActionToObject;
 
 //////

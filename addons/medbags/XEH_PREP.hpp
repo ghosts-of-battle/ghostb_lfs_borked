@@ -1,10 +1,10 @@
 PREP(canUnpackFirstAid);
 PREP(canUnpackMedicKit);
-PREP(canUnpackDrugKit);
+// PREP(canUnpackDrugKit);
 PREP(doUnpackFirstAid);
 PREP(doUnpackMedicKit);
-PREP(doUnpackDrugKit);
-PREP(doUnpackTrauma);
-PREP(canUnpackTrauma);
+// PREP(doUnpackDrugKit);
+// PREP(doUnpackTrauma);
+// PREP(canUnpackTrauma);
 // PREP(doTake);
 // PREP(canTake);

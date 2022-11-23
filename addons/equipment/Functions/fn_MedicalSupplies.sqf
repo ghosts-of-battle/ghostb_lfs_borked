@@ -105,14 +105,12 @@ call {
     ["Chemlight_green", 10],
     ["Chemlight_red", 10],
     ["ghostb_medbags_DrugKit", 10],
-    ["kat_X_AED", 2],
     ["ghostb_medbags_FirstAid", 20],
     ["ACE_bodyBag", 8],
     ["GHOSTB_medbags_MedicKit", 8],
     ["Attachable_Helistretcher", 2],
     ["ACE_surgicalKit", 2],
     ["GHOSTB_Stethoscope", 2],
-    ["kat_accuvac", 2],
     ["ACE_personalAidKit",8],
     ["ghostb_medbags_Trauma",1]
    ];
