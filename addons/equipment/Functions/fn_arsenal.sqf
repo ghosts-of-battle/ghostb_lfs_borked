@@ -33,13 +33,13 @@ Public: Yes
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ACE_adenosine","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","ACE_bloodIV","ACE_bloodIV_500","ACE_bodyBag","ghostb_medbags_DrugKit","ACE_epinephrine","ghostb_medbags_FirstAid","ghostb_medbags_MedicKit","ACE_morphine","ACE_plasmaIV","ACE_plasmaIV_250","ACE_plasmaIV_500","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_splint","ACE_surgicalKit","ACE_tourniquet","ghostb_medbags_Trauma","ACE_bloodIV_250"],
+    "ghostb_medbags_DrugKit","ghostb_medbags_FirstAid","ghostb_medbags_MedicKit","ghostb_medbags_Trauma","kat_IV_16","ACE_adenosine","kat_X_AED","kat_AED","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","kat_plate","kat_clamp","kat_vacuum","kat_EACA","ACE_epinephrine","kat_etomidate","kat_IO_FAST","kat_flumazenil","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_naloxone","kat_nitroglycerin","kat_norepinephrine","kat_phenylephrine","kat_phenylephrine_inject","ACE_plasmaIV","ACE_plasmaIV_500","ACE_plasmaIV_250","kat_retractor","kat_scalpel","ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500","ACE_splint","ACE_tourniquet","kat_TXA"],
     "Ghost Medical",
     "\z\ace\addons\medical_gui\data\categories\medication.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);
 
 [
-    ["ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red","ace_marker_flags_white","ace_marker_flags_yellow","ACE_IR_Strobe_Item","ACE_Chemlight_Shield","KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","taro_vs17_panel"],
+    ["taro_vs17_panel","ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red","ace_marker_flags_white","ace_marker_flags_yellow","ACE_IR_Strobe_Item","ACE_Chemlight_Shield","KNB_PanelGreen","KNB_PanelRed","KNB_PanelYellow","ACE_SpraypaintBlack","ACE_SpraypaintBlue","ACE_SpraypaintGreen","ACE_SpraypaintRed","taro_vs17_panel"],
     "Marking",
     "\z\ace\addons\arsenal\data\iconCustom.paa"
 ] call ACEFUNC(arsenal,addRightPanelButton);

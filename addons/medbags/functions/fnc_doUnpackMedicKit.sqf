@@ -49,7 +49,7 @@ if (isNull _unit) exitWith {};
         2,
         [], { GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
         localize "Unpack Mead Kit....",
- {true},
+    {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
 
@@ -72,6 +72,12 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_fieldDressing", 06, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_tourniquet", 04, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_EarPlugs", 02, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_plate", 2, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_clamp", 4, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_tourniquet", 04, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_IO_FAST", 4, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_IV_16", 4, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_TXA", 4, _order, _overflow] call EFUNC(common,addItem);
     };
 
     if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {

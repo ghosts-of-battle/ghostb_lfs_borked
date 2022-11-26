@@ -73,6 +73,7 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_epinephrine", 10, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_morphine", 16, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_adenosine", 8, _order, _overflow] call EFUNC(common,addItem);
-
+        [_unit, "kat_phenylephrine", 10, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_phenylephrine_inject", 8, _order, _overflow] call EFUNC(common,addItem);
     };
 };

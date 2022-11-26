@@ -27,9 +27,11 @@
 This is the custom mod for Ghost AirAssault
 Its based/inspired on/by the following projects;
 
+This is the custom mod for Ghosts of Battle
+Its based/inspired on/by the following projects;
 
 ##Its based on, and inspired by the following projects
-- https://github.com/Ghost/Mods  -  GNU GENERAL PUBLIC LICENSE
+- https://github.com/ArmaForces/Mods  -  GNU GENERAL PUBLIC LICENSE
 - https://github.com/AXEmod/AXE - GNU General Public License (GPLv3)
 - https://github.com/Theseus-Aegis/Mods - GNU General Public License (GPLv2).
 - https://github.com/last-resort-gaming/LRG-Fundamentals - MIT License
@@ -39,31 +41,21 @@ Its based/inspired on/by the following projects;
 - https://github.com/Katalam/KNB - GNU General Public License (GPLv3)
 - https://github.com/SzwedzikPL/SimpleSuppress/releases - MIT License
 - https://github.com/johnb432/Zeus-Additions - MIT License
+-https://steamcommunity.com/sharedfiles/filedetails/?id=2869453820  - Arma Public License Share-Alike (APL-SA)
 
-
-you can find the Ghost Version at https://github.com/ghosts-of-battle/ghostb
+All the code in this mod is available in the Github
+you can find the Ghosts of Battle Version at https://github.com/ghosts-of-battle/ghostb
 
 (I know I forgot a few, I will work on getting those mentions put in)
 
-All the code in this mod is available in the Ghost Git
-
-<br/><br/>
-# This mod includes: (With permission)
-
-- Spyke - A3U - Arma 3 Utilities https://steamcommunity.com/sharedfiles/filedetails/?id=1560749177
-
-
-<br/><br/>
-
-# This mod includes: (per expressed permission on each mods steam page)
-
+# This mod includes : (per expressed permission on each mods steam page)
 
 Fat_Lurch's
 - Turret Enhanced https://steamcommunity.com/sharedfiles/filedetails/?id=1623498241
 - MS_IFF_Strobe https://steamcommunity.com/sharedfiles/filedetails/?id=1543390130
 - Ammocan https://steamcommunity.com/sharedfiles/filedetails/?id=2162698437
 - Vehicle Inventory System https://steamcommunity.com/sharedfiles/filedetails/?id=2161671937
-<br/><br/>
+
 
 ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   Compatibility and optional packages
@@ -74,27 +66,9 @@ ACE MOD https://steamcommunity.com/workshop/filedetails/?id=463939057
   - Realistic Dispersion
   - Tracers (ball)
 
+Vestarr's
+BettIR (Legacy v0.2.1) https://steamcommunity.com/sharedfiles/filedetails/?id=2260572637
 
-<br/><br/>
-<br/><br/>
-
-# Expected Mods
-
-- CBA_A3	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=450814997
-- ace	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=463939057
-- Hatchet Framework - Development Version	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1745501106
-- Zeus Enhanced	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631
-- dzn MG Tripod	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1713801249
-- Task Force Arrowhead Radio (BETA!!!)	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=894678801
-- Ctab Devastator Edition	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2189592034
-- CUP Terrains - Core	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=583496184
-- CUP Terrains - Maps	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=583544987
-- Enhanced Movement	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=333310405
-- ILBE Assault Pack - Rewrite	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1875281645
-- Hatchet H-60 pack - Development Version	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1745501605
-- AH-64D Official Project	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1351428303
-- Project OPFOR	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=735566597
-- Military Gear Pack	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=736829758
-- DUI - Squad Radar	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=1638341685
-- KAT - Advanced Medical REWRITE	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2020940806
-- Zeus Enhanced - ACE3 Compatibility	Steam	http://steamcommunity.com/sharedfiles/filedetails/?id=2018593688
+Locky's 
+TSF Crye Precision AVS https://steamcommunity.com/sharedfiles/filedetails/?id=2499478882
+TSF JPC 2.0 & LV-119  https://steamcommunity.com/sharedfiles/filedetails/?id=2371800141

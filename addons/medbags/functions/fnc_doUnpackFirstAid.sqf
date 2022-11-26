@@ -70,6 +70,8 @@ if (isNull _unit) exitWith {};
         [_unit, "ACE_EarPlugs", 1, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_salineIV_500", 1, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_splint", 2, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_IV_16", 1, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "kat_TXA", 1, _order, _overflow] call EFUNC(common,addItem);
     };
 
     if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
