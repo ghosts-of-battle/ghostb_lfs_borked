@@ -25,10 +25,13 @@ class RscDisplayStart: RscStandardDisplay {
         class controls {
         class LoadingStart: RscControlsGroup {
             class controls {
-                class Logo: RscPictureKeepAspect {};
-                class Noise: RscPicture {
-                    text = "";
+                class Logo: RscPictureKeepAspect {
+                    idc = 1200;
+                    x = "100 * safezoneW";
                 };
+                // class Noise: RscPicture {
+                //     text = "";
+                // };
             };
         };
     };

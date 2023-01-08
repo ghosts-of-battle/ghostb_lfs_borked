@@ -8,7 +8,7 @@ class CfgVehicles {
         // exceptions[] = {"isNotDead", "isNotUnconscious", "isNotSurrendering", "isNotHandcuffed", "isNotCarrying", "isNotDragging", "isNotEscorting", "isNotSwimming", "isNotRefueling", "isNotOnLadder", "isNotSitting", "isNotInside", "isNotInZeus", "notOnMap"};
         class ACE_SelfActions {
                 class GVAR(Medical_Supplies_Action_FirstAid) {
-                    displayName = "Unpack IFAK";
+                    displayName = "Unpack Boo Boo Bag";
                     condition = "[_player] call ghostb_medbags_fnc_canUnpackFirstAid";
                     statement = "[_player] call ghostb_medbags_fnc_doUnpackFirstAid";
                     exceptions[] = {"isNotInside", "isNotSitting"};
@@ -45,7 +45,7 @@ class CfgVehicles {
         };
         // class ACE_MainActions {
         //     class GVAR(Medical_Supplies_Action_Take) {
-        //         displayName = "Take IFAK";
+        //         displayName = "Take Boo Boo Bag";
         //         condition = "[_player] call ghostb_medbags_fnc_canTake";
         //         statement = "[(_player, _target)] call ghostb_medbags_fnc_doTake";
         //         exceptions[] = {"isNotInside", "isNotSitting"};
@@ -63,7 +63,7 @@ class CfgVehicles {
         scopeArsenal = 2;
         scopeCurator = 2;
         author = QAUTHOR;
-        displayName = "IFAK";
+        displayName = "Boo Boo Bag";
         editorPreview = QPATHTOF(data\previews\firstaid.jpg);
         vehicleClass = "Items";
         class TransportItems {

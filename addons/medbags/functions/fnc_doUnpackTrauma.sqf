@@ -48,7 +48,7 @@ if (isNull _unit) exitWith {};
     [
         2,
         [], { GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        localize "Unpack Trauma Kit....",
+        localize "Unpacking Trauma Kit....",
  {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;

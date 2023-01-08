@@ -17,8 +17,6 @@ class CfgVehicles {
             "SlingLoadCargo3",
             "SlingLoadCargo4"
         };
-        class EventHandlers: EventHandlers {
-        };
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
@@ -48,8 +46,6 @@ class CfgVehicles {
             "SlingLoadCargo2",
             "SlingLoadCargo3",
             "SlingLoadCargo4"
-        };
-        class EventHandlers: EventHandlers {
         };
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
@@ -81,8 +77,6 @@ class CfgVehicles {
             "SlingLoadCargo3",
             "SlingLoadCargo4"
         };
-        class EventHandlers: EventHandlers {
-        };
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
@@ -113,8 +107,6 @@ class CfgVehicles {
             "SlingLoadCargo3",
             "SlingLoadCargo4"
         };
-        class EventHandlers: EventHandlers {
-        };
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
@@ -144,8 +136,6 @@ class CfgVehicles {
             "SlingLoadCargo2",
             "SlingLoadCargo3",
             "SlingLoadCargo4"
-        };
-        class EventHandlers: EventHandlers {
         };
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";

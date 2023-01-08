@@ -50,7 +50,7 @@ if (isNull _unit) exitWith {};
         [],
         { GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; },
         { GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
-        localize "Unpack IFAK....",
+        localize "Unpacking Boo Boo Bag....",
         {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
@@ -66,7 +66,7 @@ if (isNull _unit) exitWith {};
 
         [_unit, "ACE_fieldDressing", 4, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_quikClot", 4, _order, _overflow] call EFUNC(common,addItem);
-        [_unit, "ACE_tourniquet", 4, _order, _overflow] call EFUNC(common,addItem);
+        [_unit, "ACE_tourniquet", 2, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_EarPlugs", 1, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_salineIV_500", 1, _order, _overflow] call EFUNC(common,addItem);
         [_unit, "ACE_splint", 2, _order, _overflow] call EFUNC(common,addItem);

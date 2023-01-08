@@ -3,21 +3,21 @@
 if (isDedicated) exitWith {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetamakecom = [
-    "oetamakecom",
+private _ghostbmakecom = [
+    "ghostbmakecom",
     "Communications",
     "", {
         player call FUNC(makecom);
-        player 
+        player
     }, {true}, {},
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetamakecom] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbmakecom] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetamakeeng = [
-    "oetamakeeng",
+private _ghostbmakeeng = [
+    "ghostbmakeeng",
     "Engineer",
     "", {
         player call FUNC(makeeng);
@@ -25,11 +25,11 @@ private _oetamakeeng = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetamakeeng] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbmakeeng] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetamakemed = [
-    "oetamakemed",
+private _ghostbmakemed = [
+    "ghostbmakemed",
     "Medic",
     "", {
         player call FUNC(makemed);
@@ -37,12 +37,12 @@ private _oetamakemed = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetamakemed] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbmakemed] call ACE_interact_menu_fnc_addActionToObject;
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetamakewep = [
-    "oetamakewep",
+private _ghostbmakewep = [
+    "ghostbmakewep",
     "Weapons",
     "", {
         player call FUNC(makewep);
@@ -50,11 +50,11 @@ private _oetamakewep = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetamakewep] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbmakewep] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _oetaFIX = [
-    "oetafix",
+private _ghostbFIX = [
+    "ghostbfix",
     "FIX Perms",
     "", {
         player call FUNC(role);
@@ -63,11 +63,11 @@ private _oetaFIX = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _oetaFIX] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbFIX] call ACE_interact_menu_fnc_addActionToObject;
 
 
-// private _oetamakepilot = [
-//     "oetamakepilot",
+// private _ghostbmakepilot = [
+//     "ghostbmakepilot",
 //     "Pilot",
 //     "", {
 //         player call FUNC(makepilot);
@@ -75,5 +75,5 @@ private _oetaFIX = [
 //     [_area]
 // ] call ACE_interact_menu_fnc_createAction;
 
-// [this, 0, ["ACE_MainActions"], _oetamakepilot] call ACE_interact_menu_fnc_addActionToObject;
+// [this, 0, ["ACE_MainActions"], _ghostbmakepilot] call ACE_interact_menu_fnc_addActionToObject;
 

@@ -60,4 +60,4 @@ class CfgFunctions {
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
-
+#include "XtdGearModels.hpp"

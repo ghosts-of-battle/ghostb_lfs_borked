@@ -27,11 +27,11 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 force ace_advanced_fatigue_enabled = true;
-force ace_advanced_fatigue_enableStaminaBar = true;       
+force ace_advanced_fatigue_enableStaminaBar = true;
 force ace_advanced_fatigue_loadFactor = 0;
 force ace_advanced_fatigue_performanceFactor = 5;
 force ace_advanced_fatigue_recoveryFactor = 5;
-force ace_advanced_fatigue_swayFactor = 0;
+force ace_advanced_fatigue_swayFactor = .05;
 force ace_advanced_fatigue_terrainGradientFactor = 0;
 
 // ACE Advanced Throwing
@@ -142,10 +142,10 @@ force ace_goggles_showInThirdPerson = false;
 force ace_grenades_convertExplosives = true;
 
 // ACE Headless
-force acex_headless_delay = 15;
-force acex_headless_enabled = false;
-force acex_headless_endMission = 0;
-force acex_headless_log = false;
+acex_headless_delay = 15;
+force acex_headless_enabled = true;
+acex_headless_endMission = 0;
+acex_headless_log = false;
 force acex_headless_transferLoadout = 1;
 
 // ACE Hearing
@@ -238,7 +238,7 @@ force ace_medical_ivFlowRate = 1.25;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
 force ace_medical_painUnconsciousChance = 0.1;
-force ace_medical_playerDamageThreshold = 1.25;
+force ace_medical_playerDamageThreshold = 2;
 force ace_medical_spontaneousWakeUpChance = 0.2;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
 force ace_medical_statemachine_AIUnconsciousness = true;
@@ -312,6 +312,52 @@ force ace_overheating_suppressorCoef = 1;
 force ace_overheating_unJamFailChance = 0.1;
 force ace_overheating_unJamOnreload = true;
 force ace_overheating_unJamOnSwapBarrel = true;
+
+// ACE Pharmacy - AED
+force aceP_circulation_CPR_Chance_Default = 20;
+force aceP_circulation_CPR_Chance_Doctor = 40;
+force aceP_circulation_CPR_Chance_RegularMedic = 30;
+force aceP_circulation_DeactMon_whileAED_X = true;
+force aceP_circulation_distanceLimit_AEDX = 30;
+force aceP_circulation_enable_CPR_Chances = true;
+force aceP_circulation_medLvl_AED_X = 1;
+force aceP_circulation_SuccesCh_AED = 80;
+force aceP_circulation_SuccesCh_AED_X = 85;
+force aceP_circulation_timeLimit_AEDX = 1800;
+force aceP_circulation_useLocation_AED = 0;
+
+// ACE Pharmacy - Fractures
+force aceP_circulation_closedLocation = 0;
+force aceP_circulation_closedReduction = 1;
+force aceP_circulation_closedTime = 10;
+force aceP_circulation_compoundChance = 30;
+force aceP_circulation_enable_fracture = false;
+force aceP_circulation_etomidateTime = 45;
+force aceP_circulation_fractureCheck_Level = 0;
+force aceP_circulation_incisionTime = 10;
+force aceP_circulation_openTime = 15;
+force aceP_circulation_simpleChance = 60;
+force aceP_circulation_surgicalAction = 2;
+force aceP_circulation_surgicalLocation = 3;
+force aceP_circulation_surgicalTime = 8;
+
+// ACE Pharmacy - Medications
+force aceP_circulation_aiEnableAdvanced = false;
+force aceP_circulation_blockChance = 20;
+force aceP_circulation_coagulation = true;
+force aceP_circulation_factorDrugs = 2;
+force aceP_circulation_IOestablish = 7;
+force aceP_circulation_IVdrop = 600;
+force aceP_circulation_IVdropEnable = true;
+force aceP_circulation_IVestablish = 7;
+force aceP_circulation_IVmedic = 0;
+force aceP_circulation_IVreuse = false;
+force aceP_circulation_kidneyAction = false;
+force aceP_circulation_maxStack = 5;
+force aceP_circulation_PushTime = 7;
+force aceP_circulation_surgicalDrugs = 2;
+force aceP_circulation_vasoDrugs = 1;
+
 
 // ACE Pointing
 force ace_finger_enabled = true;
@@ -391,7 +437,6 @@ force ace_overpressure_distanceCoefficient = 1;
 force ace_parachute_failureChance = 0.2;
 force ace_parachute_hideAltimeter = true;
 
-
 // ACE Vehicle Lock
 force ace_vehiclelock_defaultLockpickStrength = 20;
 force ace_vehiclelock_lockVehicleInventory = true;
@@ -444,22 +489,35 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = true;
 force ace_zeus_zeusBird = false;
 
+// Anti Wall Glitch by Nerexis
+force NER_antiWallGlitch_barrierClass = "Land_BarrelEmpty_F";
+force NER_antiWallGlitch_barrierDistance = 1.2;
+force NER_antiWallGlitch_checkHead = false;
+force NER_antiWallGlitch_checkWeaponLeft = true;
+force NER_antiWallGlitch_checkWeaponRight = true;
+force NER_antiWallGlitch_createBarrierAtBadLocation = false;
+force NER_antiWallGlitch_disableOnPlants = true;
+force NER_antiWallGlitch_distance_head = 0.1;
+force NER_antiWallGlitch_distance_weapon_left = 0.2;
+force NER_antiWallGlitch_distance_weapon_right = 0.2;
+force NER_antiWallGlitch_enabled = true;
+force NER_antiWallGlitch_isEnabledForPlayers = false;
+force NER_antiWallGlitch_preventDeathOnPunish = true;
+force NER_antiWallGlitch_preventDeathTime = 2;
+force NER_antiWallGlitch_punishByForce_strength = 250;
+force NER_antiWallGlitch_punishByNullVelocity_jumpStrength = 5;
+force NER_antiWallGlitch_punishByTeleport_jumpStrength = 2.5;
+force NER_antiWallGlitch_punishByTeleport_strength = 0.001;
+force NER_antiWallGlitch_punishType = 2;
+force NER_antiWallGlitch_recalcPathPlanningAtBadLoc = true;
+force NER_antiWallGlitch_sleepTime = 0.05;
+force NER_antiWallGlitch_unconsciousHelperSleepTime = 2;
+
 // Community Base Addons
 force cba_diagnostic_watchInfoRefreshRate = 0.2;
 force cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = false;
 force cba_network_loadoutValidation = 1;
-
-
-// cTab
-force ctab_core_bft_mode = 1;
-force ctab_core_defMapStyle = "SAT";
-force ctab_core_gridPrecision = 2;
-force ctab_core_helmetcam_mode = 1;
-force ctab_core_sync_time = 60;
-force ctab_core_uav_mode = 1;
-force ctab_core_useAceMicroDagr = true;
-force ctab_core_useArmaMarker = true;
 
 // KAT - ADV Medical: Airway
 force kat_airway_Accuvac_time = 8;
@@ -473,6 +531,7 @@ force kat_airway_Larynxtubus_time = 3;
 force kat_airway_medLvl_Accuvac = 2;
 force kat_airway_medLvl_Guedeltubus = 1;
 force kat_airway_medLvl_Larynxtubus = 1;
+force kat_airway_occlusion_repeatTimer = 60;
 force kat_airway_Overstretch_time = 3;
 force kat_airway_probability_headturning = 50;
 force kat_airway_probability_obstruction = 15;
@@ -482,26 +541,31 @@ force kat_airway_string_exit = "";
 force kat_airway_TurnAround_time = 2;
 
 // KAT - ADV Medical: Breathing
+force kat_breathing_advPtxChance = 15;
+force kat_breathing_advPtxEnable = true;
+force kat_breathing_deterioratingPneumothorax_chance = 10;
+force kat_breathing_deterioratingPneumothorax_countdown = 120;
 force kat_breathing_enable = true;
 force kat_breathing_enable_selfChestseal = 1;
 force kat_breathing_enableCyanosis = true;
-force kat_breathing_hemopneumothoraxChance = 15;
+force kat_breathing_hptxChance = 20;
 force kat_breathing_medLvl_Chestseal = 1;
 force kat_breathing_medLvl_Cyanosis = 0;
 force kat_breathing_medLvl_hemopneumothoraxTreatment = 1;
 force kat_breathing_medLvl_Pulseoximeter = 0;
 force kat_breathing_mildValue = 65;
-force kat_breathing_pneumothorax = 20;
 force kat_breathing_pneumothorax_hardcore = true;
+force kat_breathing_pneumothoraxChance = 20;
 force kat_breathing_pneumothoraxDamageThreshold = 0.4;
 force kat_breathing_severeValue = 40;
 force kat_breathing_showPneumothorax_dupe = false;
 force kat_breathing_slightValue = 80;
 force kat_breathing_SpO2_dieActive = false;
 force kat_breathing_SpO2_dieValue = 25;
-force kat_breathing_SpO2_MultiplyNegative = .75;
+force kat_breathing_SpO2_MultiplyNegative = 0.75;
 force kat_breathing_SpO2_MultiplyPositive = 2;
 force kat_breathing_SpO2_perfusion = true;
+force kat_breathing_SpO2_PerfusionMultiplier = 1;
 force kat_breathing_SpO2_unconscious = 75;
 force kat_breathing_Stable_spo2 = 85;
 force kat_breathing_tensionhemothorax_hardcore = true;
@@ -509,13 +573,21 @@ force kat_breathing_tensionhemothorax_hardcore = true;
 // KAT - ADV Medical: Circulation
 force kat_circulation_AdvRhythm = true;
 force kat_circulation_AED_BeepsAndCharge = true;
+force kat_circulation_AED_MaxChance = 80;
+force kat_circulation_AED_MinChance = 40;
+force kat_circulation_AED_X_MaxChance = 90;
+force kat_circulation_AED_X_MinChance = 45;
 force kat_circulation_blood_draw_limit = 3.6;
 force kat_circulation_blood_drawTime_250ml = 25;
 force kat_circulation_blood_drawTime_500ml = 50;
+kat_circulation_bloodgroup = "AB_N";
 force kat_circulation_bloodGroups = true;
-force kat_circulation_CPR_Chance_Default = 20;
-force kat_circulation_CPR_Chance_Doctor = 50;
-force kat_circulation_CPR_Chance_RegularMedic = 40;
+force kat_circulation_CPR_MaxChance_Default = 20;
+force kat_circulation_CPR_MaxChance_Doctor = 40;
+force kat_circulation_CPR_MaxChance_RegularMedic = 30;
+force kat_circulation_CPR_MinChance_Default = 10;
+force kat_circulation_CPR_MinChance_Doctor = 20;
+force kat_circulation_CPR_MinChance_RegularMedic = 15;
 force kat_circulation_DeactMon_whileAED_X = true;
 force kat_circulation_distanceLimit_AEDX = 30;
 force kat_circulation_enable = true;
@@ -523,29 +595,133 @@ force kat_circulation_enable_CPR_Chances = true;
 force kat_circulation_enable_selfBloodDraw = 1;
 force kat_circulation_medLvl_AED = 2;
 force kat_circulation_medLvl_AED_X = 2;
-force kat_circulation_SuccesCh_AED = 80;
-force kat_circulation_SuccesCh_AED_X = 85;
 force kat_circulation_timeLimit_AEDX = 1800;
 force kat_circulation_useLocation_AED = 3;
 
 // KAT - ADV Medical: Misc
+force kat_misc_arsenalMedCategory = true;
 force kat_misc_enable = true;
+force kat_misc_incompatibilityWarning = true;
 
 // KAT - ADV Medical: Pharmacy
-force kat_pharma_carbonateActive = true;
-force kat_pharma_IOestablish = 6.505;
+force kat_pharma_blockChance = 20;
+force kat_pharma_carbonateChance = 100;
+force kat_pharma_coagulation = true;
+force kat_pharma_ivCheckLimbDamage = true;
 force kat_pharma_IVdrop = 600;
 force kat_pharma_IVdropEnable = true;
-force kat_pharma_IVestablish = 6.505;
-force kat_pharma_IVmedic = 1;
 force kat_pharma_IVreuse = false;
+force kat_pharma_kidneyAction = true;
+force kat_pharma_MedicationsRequireInsIV = true;
+force kat_pharma_medLvl_Amiodarone = 1;
+force kat_pharma_medLvl_ApplyIO = 0;
+force kat_pharma_medLvl_ApplyIV = 0;
+force kat_pharma_medLvl_Atropine = 1;
+force kat_pharma_medLvl_Carbonate = 1;
+force kat_pharma_medLvl_EACA = 0;
+force kat_pharma_medLvl_Etomidate = 1;
+force kat_pharma_medLvl_Fentanyl = 1;
+force kat_pharma_medLvl_Flumezenil = 1;
+force kat_pharma_medLvl_Ketamine = 1;
+force kat_pharma_medLvl_Lidocaine = 1;
+force kat_pharma_medLvl_Lorazepam = 1;
+force kat_pharma_medLvl_Nalbuphine = 1;
+force kat_pharma_medLvl_Naloxone = 1;
+force kat_pharma_medLvl_Nitroglycerin = 1;
+force kat_pharma_medLvl_Norepinephrine = 1;
+force kat_pharma_medLvl_Phenylephrine = 1;
 force kat_pharma_medLvl_Reorientation = 1;
-force kat_pharma_naloxoneActive = true;
-force kat_pharma_PushTime = 6.505;
+force kat_pharma_medLvl_TXA = 0;
 force kat_pharma_Reorientation_Enable = true;
 force kat_pharma_Reorientation_Slap = true;
+force kat_pharma_reorientationChance = 100;
 force kat_pharma_RequireInsIV = true;
-force kat_pharma_txaActive = true;
+force kat_pharma_treatmentTime_Amiodarone = 7;
+force kat_pharma_treatmentTime_ApplyIO = 7;
+force kat_pharma_treatmentTime_ApplyIV = 7;
+force kat_pharma_treatmentTime_Atropine = 7;
+force kat_pharma_treatmentTime_Carbonate = 7;
+force kat_pharma_treatmentTime_EACA = 7;
+force kat_pharma_treatmentTime_Etomidate = 2;
+force kat_pharma_treatmentTime_Fentanyl = 7;
+force kat_pharma_treatmentTime_Flumazenil = 2;
+force kat_pharma_treatmentTime_Ketamine = 7;
+force kat_pharma_treatmentTime_Lidocaine = 7;
+force kat_pharma_treatmentTime_Lorazepam = 2;
+force kat_pharma_treatmentTime_Nalbuphine = 7;
+force kat_pharma_treatmentTime_Naloxone = 7;
+force kat_pharma_treatmentTime_Nitroglycerin = 7;
+force kat_pharma_treatmentTime_Norepinephrine = 7;
+force kat_pharma_treatmentTime_Phenylephrine = 7;
+force kat_pharma_treatmentTime_Reorientation = 2;
+force kat_pharma_treatmentTime_TXA = 7;
+
+// KAT - ADV Medical: Surgery
+force kat_surgery_BreathCheck_MedLevel = 0;
+force kat_surgery_BreathCheck_Time = 2;
+force kat_surgery_closedLocation = 0;
+force kat_surgery_closedReduction_MedLevel = 1;
+force kat_surgery_closedTime = 10;
+force kat_surgery_compoundChance = 30;
+force kat_surgery_debrideTime = 20;
+force kat_surgery_enable_fracture = true;
+force kat_surgery_enable_selfCheckFracture = 1;
+force kat_surgery_etomidateTime = 45;
+force kat_surgery_fractureCheck_MedLevel = 0;
+force kat_surgery_fractureCheck_Time = 10;
+force kat_surgery_incisionTime = 10;
+force kat_surgery_intermediateTime = 8;
+force kat_surgery_npwtTime = 20;
+force kat_surgery_openTime = 15;
+force kat_surgery_simpleChance = 60;
+force kat_surgery_surgicalAction_MedLevel = 1;
+force kat_surgery_surgicalLocation = 0;
+force kat_surgery_uncon_requieredForActions = true;
+
+// LAMBS Danger
+force lambs_danger_cqbRange = 60;
+lambs_danger_disableAIAutonomousManoeuvres = false;
+lambs_danger_disableAIDeployStaticWeapons = false;
+lambs_danger_disableAIFindStaticWeapons = false;
+lambs_danger_disableAIHideFromTanksAndAircraft = false;
+lambs_danger_disableAIPlayerGroup = false;
+lambs_danger_disableAIPlayerGroupReaction = false;
+lambs_danger_disableAutonomousFlares = false;
+lambs_danger_disableAutonomousSmokeGrenades = false;
+force lambs_danger_panicChance = 0.1;
+
+// LAMBS Danger Eventhandlers
+force lambs_eventhandlers_ExplosionEventHandlerEnabled = true;
+force lambs_eventhandlers_ExplosionReactionTime = 9;
+
+// LAMBS Danger WP
+force lambs_wp_autoAddArtillery = true;
+
+// LAMBS Main
+force lambs_main_combatShareRange = 200;
+force lambs_main_debug_drawAllUnitsInVehicles = false;
+force lambs_main_debug_Drawing = false;
+force lambs_main_debug_FSM = false;
+force lambs_main_debug_FSM_civ = false;
+force lambs_main_debug_functions = false;
+force lambs_main_debug_RenderExpectedDestination = false;
+lambs_main_disableAICallouts = false;
+lambs_main_disableAIDodge = false;
+lambs_main_disableAIFleeing = false;
+lambs_main_disableAIGestures = false;
+lambs_main_disableAutonomousMunitionSwitching = false;
+lambs_main_disablePlayerGroupSuppression = false;
+force lambs_main_indoorMove = 0.1;
+force lambs_main_maxRevealValue = 1;
+force lambs_main_minFriendlySuppressionDistance = 5;
+force lambs_main_minObstacleProximity = 5;
+force lambs_main_minSuppressionRange = 50;
+force lambs_main_radioBackpack = 2000;
+lambs_main_radioDisabled = false;
+force lambs_main_radioEast = 500;
+force lambs_main_radioGuer = 500;
+force lambs_main_radioShout = 100;
+force lambs_main_radioWest = 500;
 
 // KNB
 force KNB_book_aceAction = true;
@@ -597,28 +773,27 @@ FORCE FORCE ghostb_bft_showUnitNames = true;
 FORCE FORCE ghostb_bft_teamColors = "ACE";
 FORCE FORCE ghostb_bft_updateInterval = 0
 
-
 // Ghost - Bodybag
 force ghostb_bodybag_destroyChance = 20;
 
 // Ghost - Channels
 force ghostb_Channels_CommandDuration = 0;
-force ghostb_Channels_CommandText = true;
+force ghostb_Channels_CommandText = false;
 force ghostb_Channels_CommandVoice = false;
 force ghostb_Channels_DirectDuration = 0;
 force ghostb_Channels_DirectText = true;
 force ghostb_Channels_DirectVoice = false;
 force ghostb_Channels_GlobalDuration = 0;
-force ghostb_Channels_GlobalText = true;
+force ghostb_Channels_GlobalText = false;
 force ghostb_Channels_GlobalVoice = false;
 force ghostb_Channels_GroupDuration = 0;
-force ghostb_Channels_GroupText = true;
+force ghostb_Channels_GroupText = false;
 force ghostb_Channels_GroupVoice = false;
 force ghostb_Channels_SideDuration = 0;
-force ghostb_Channels_SideText = true;
+force ghostb_Channels_SideText = false;
 force ghostb_Channels_SideVoice = false;
 force ghostb_Channels_VehicleDuration = 0;
-force ghostb_Channels_VehicleText = true;
+force ghostb_Channels_VehicleText = false;
 force ghostb_Channels_VehicleVoice = false;
 
 // Ghost - Cuecard
@@ -706,12 +881,12 @@ force tfar_radiocode_west = "_bluefor";
 force tfar_radioCodesDisabled = false;
 force TFAR_SameLRFrequenciesForSide = true;
 force TFAR_SameSRFrequenciesForSide = true;
-force TFAR_setting_defaultFrequencies_lr_east = "";
-force TFAR_setting_defaultFrequencies_lr_independent = "";
-force TFAR_setting_defaultFrequencies_lr_west = "";
-force TFAR_setting_defaultFrequencies_sr_east = "";
-force TFAR_setting_defaultFrequencies_sr_independent = "";
-force TFAR_setting_defaultFrequencies_sr_west = "";
+force TFAR_setting_defaultFrequencies_lr_east = "60,61,62,63,64,65,66,67,68,69";
+force TFAR_setting_defaultFrequencies_lr_independent = "70,71,72,73,74,75,76,77,78,79";
+force TFAR_setting_defaultFrequencies_lr_west = "50,51,52,53,54,55,56,57,58,59";
+force TFAR_setting_defaultFrequencies_sr_east = "201,202,203,204,205,206,207,208";
+force TFAR_setting_defaultFrequencies_sr_independent = "311,312,313,314,315,316,317,318";
+force TFAR_setting_defaultFrequencies_sr_west = "101,102,103,104,105,106,107,108";
 force TFAR_setting_DefaultRadio_Airborne_east = "TFAR_mr6000l";
 force TFAR_setting_DefaultRadio_Airborne_Independent = "TFAR_anarc164";
 force TFAR_setting_DefaultRadio_Airborne_West = "TFAR_anarc210";
@@ -728,7 +903,7 @@ force TFAR_spectatorCanHearEnemyUnits = true;
 force TFAR_spectatorCanHearFriendlies = true;
 force TFAR_takingRadio = 2;
 force TFAR_Teamspeak_Channel_Name = "TaskForceRadio";
-force TFAR_Teamspeak_Channel_Password = "";
+force TFAR_Teamspeak_Channel_Password = "TaskForceRadio";
 force tfar_terrain_interception_coefficient = 7;
 force TFAR_voiceCone = true;
 
@@ -760,3 +935,93 @@ force SSS_setting_restoreCrewOnRTB = true;
 force SSS_setting_slingLoadSearchRadius = 100;
 force SSS_setting_slingLoadWhitelist = "";
 SSS_setting_useChatNotifications = false;
+
+
+// VCOM AI East Skill
+Vcm_AISkills_East_AimingAccuracy = 0.25;
+Vcm_AISkills_East_aimingShake = 0.15;
+Vcm_AISkills_East_aimingSpeed = 0.15;
+Vcm_AISkills_East_commanding = 0.85;
+Vcm_AISkills_East_courage = 0.5;
+Vcm_AISkills_East_general = 0.5;
+Vcm_AISkills_East_reloadSpeed = 1;
+Vcm_AISkills_East_spotDistance = 0.85;
+Vcm_AISkills_East_spotTime = 0.85;
+
+// VCOM AI General Skill
+Vcm_AISkills_General_AimingAccuracy = 0.25;
+Vcm_AISkills_General_aimingShake = 0.15;
+Vcm_AISkills_General_aimingSpeed = 0.35;
+Vcm_AISkills_General_commanding = 0.85;
+Vcm_AISkills_General_courage = 0.5;
+Vcm_AISkills_General_general = 0.5;
+Vcm_AISkills_General_GrenadeCoolDown = 60;
+Vcm_AISkills_General_reloadSpeed = 1;
+Vcm_AISkills_General_SmokeCoolDown = 60;
+Vcm_AISkills_General_spotDistance = 0.85;
+Vcm_AISkills_General_spotTime = 0.85;
+
+// VCOM AI Resistance Skill
+Vcm_AISkills_Resistance_AimingAccuracy = 0.25;
+Vcm_AISkills_Resistance_aimingShake = 0.15;
+Vcm_AISkills_Resistance_aimingSpeed = 0.15;
+Vcm_AISkills_Resistance_commanding = 0.85;
+Vcm_AISkills_Resistance_courage = 0.5;
+Vcm_AISkills_Resistance_general = 0.5;
+Vcm_AISkills_Resistance_reloadSpeed = 1;
+Vcm_AISkills_Resistance_spotDistance = 0.85;
+Vcm_AISkills_Resistance_spotTime = 0.85;
+
+// VCOM AI West Skill
+Vcm_AISkills_West_AimingAccuracy = 0.25;
+Vcm_AISkills_West_aimingShake = 0.15;
+Vcm_AISkills_West_aimingSpeed = 0.15;
+Vcm_AISkills_West_commanding = 0.85;
+Vcm_AISkills_West_courage = 0.5;
+Vcm_AISkills_West_general = 0.5;
+Vcm_AISkills_West_reloadSpeed = 1;
+Vcm_AISkills_West_spotDistance = 0.85;
+Vcm_AISkills_West_spotTime = 0.85;
+
+// VCOM SETTINGS
+VCM_ActivateAI = true;
+VCM_ADVANCEDMOVEMENT = true;
+VCM_AIDISTANCEVEHPATH = 100;
+VCM_AIMagLimit = 5;
+VCM_AISkills_General_EM = true;
+VCM_AISkills_General_EM_CHN = 10;
+VCM_AISkills_General_EM_CLDWN = 10;
+Vcm_AISkills_SideSpecific = false;
+VCM_AISNIPERS = true;
+VCM_ARTYDELAY = 30;
+VCM_ARTYENABLE = true;
+force VCM_ARTYSIDES = [GUER,EAST];
+VCM_CARGOCHNG = true;
+VCM_ClassSteal = true;
+VCM_DebugAIPathing = false;
+VCM_DebugCombatMove = false;
+VCM_DebugFSM = false;
+VCM_DebugOld = false;
+VCM_DebugSuppression = false;
+VCM_DISEMBARKRANGE = 200;
+Vcm_DrivingActivated = false;
+VCM_ForceSpeed = true;
+VCM_FRMCHANGE = true;
+Vcm_GrenadeChance = 10;
+VCM_HEARINGDISTANCE = 1200;
+Vcm_IdleAnimationChnc = 2;
+Vcm_IdleAnimationsEnabled = true;
+VCM_MINECHANCE = 75;
+Vcm_RadioChatter = false;
+VCM_RAGDOLL = true;
+VCM_RAGDOLLCHC = 100;
+force VCM_SIDEENABLED = [GUER,EAST];
+VCM_SKILLCHANGE = true;
+Vcm_SmokeGrenadeChance = 10;
+VCM_STATICARMT = 300;
+Vcm_StaticWeapons = false;
+VCM_StealVeh = true;
+VCM_TURRETUNLOAD = true;
+VCM_USECBASETTINGS = true;
+VCM_WARNDELAY = 30;
+VCM_WARNDIST = 1000;

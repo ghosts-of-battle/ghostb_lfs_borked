@@ -1,16 +1,16 @@
 #include "script_component.hpp"
 class CfgWeapons {
-    
+
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
     class ACE_ItemCore: CBA_MiscItem {};
-    
+
     // MEDICAL SUPPLIES
-    
+
     class GVAR(FirstAid): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
-        displayName = "IFAK";
+        displayName = "Boo Boo Bag";
         descriptionShort = "Contains material for first aid";
         editorPreview = QPATHTOF(data\previews\firstaid.jpg);
         picture = QPATHTOF(data\ui\firstaid_ca.paa);
@@ -21,7 +21,7 @@ class CfgWeapons {
             mass = 4;
         };
     };
-    
+
     class GVAR(MedicKit): ACE_ItemCore {
         scope = 2;
         author = QAUTHOR;
@@ -66,5 +66,5 @@ class CfgWeapons {
             mass = 12;
         };
     };
-    
+
 };

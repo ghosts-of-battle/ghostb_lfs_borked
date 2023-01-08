@@ -4,13 +4,14 @@ author = "YonV"
 template = "cba"
 mainprefix = "z"
 folder_optionals = true
+sig_version = 3
 
 files = [
     "mod.cpp",
     "README.md",
     "LICENSE",
-    "extras/addons",
-    "extras/keys",
+    "3rdparty/addons",
+    "3rdparty/keys",
     "AUTHORS.txt",
     "gobp2_256_g.paa",
     "gobp2_256.paa",
