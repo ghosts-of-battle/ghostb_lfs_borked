@@ -29,9 +29,9 @@ class RscDisplayStart: RscStandardDisplay {
                     idc = 1200;
                     x = "100 * safezoneW";
                 };
-                // class Noise: RscPicture {
-                //     text = "";
-                // };
+                class Noise: RscPicture {
+                    text = "";
+                };
             };
         };
     };

@@ -10,7 +10,7 @@
  * mass <NUMBER>
  *
  * Example:
- * ["FirstAidKit"] call GHOSTB_boc_fnc_itemMass;
+ * ["FirstAidKit"] call ghostb_boc_fnc_itemMass;
  *
  * Public: No
  */

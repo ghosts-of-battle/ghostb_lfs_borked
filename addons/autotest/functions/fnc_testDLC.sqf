@@ -1,6 +1,6 @@
 #include "\z\ghostb\addons\autotest\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: GHOSTB_autotest_fnc_testDLC
+Internal Function: ghostb_autotest_fnc_testDLC
 
 Description:
     Checks units/vehicles DLC usage

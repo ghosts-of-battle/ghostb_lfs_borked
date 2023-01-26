@@ -12,7 +12,7 @@
  * nothing
  *
  * Example:
- * [] call GHOSTB_hints_fnc_cleanup;
+ * [] call ghostb_hints_fnc_cleanup;
  *
  */
 

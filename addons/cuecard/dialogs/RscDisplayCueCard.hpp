@@ -3,9 +3,9 @@ class RscDisplayCueCard {
     enableSimulation = 1;
     closeOnMissionEnd = 0;
     scriptName = "RscDisplayCueCard";
-    scriptPath = "GHOSTBisplays";
-    onLoad = "[""onLoad"",_this,""RscDisplayCueCard"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload = "[""onUnload"",_this,""RscDisplayCueCard"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    scriptPath = "ghostbisplays";
+    onLoad = "[""onLoad"",_this,""RscDisplayCueCard"",'ghostbisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    onUnload = "[""onUnload"",_this,""RscDisplayCueCard"",'ghostbisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
     movingEnable = true;
 
     class Controls {

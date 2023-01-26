@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [_disp] call GHOSTB_boc_fnc_arsenal_opened;
+ * [_disp] call ghostb_boc_fnc_arsenal_opened;
  *
  * Public: No
  */

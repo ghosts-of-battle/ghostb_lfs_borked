@@ -17,7 +17,7 @@ params [
     ["_input",[0,0,0]]
 ];
 
-private _ghostbVersion = getMissionConfigValue ["ghostb_version",[0,0,0]];
+private _ghostbersion = getMissionConfigValue ["ghostb_version",[0,0,0]];
 
-([_ghostbVersion,_input] call EFUNC(common,checkVersionArray));
+([_ghostbersion,_input] call EFUNC(common,checkVersionArray));
 

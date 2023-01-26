@@ -25,14 +25,14 @@ params["_fullmapWindow"];
     private _markerSize = getMarkerSize _x;
     private _markerColor = (configfile >> "CfgMarkerColors" >> getMarkerColor _x >> "color") call BIS_fnc_colorConfigToRGBA;
     private _markerDir = markerDir _x;
-    
+
     switch (_markerShape) do {
         case "RECTANGLE": {
-            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
+            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
             _fullmapWindow drawRectangle [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerBrush]
         };
         case "ELLIPSE": {
-            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture"); 
+            private _markerBrush = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
             _fullmapWindow drawEllipse  [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerBrush]
         };
         case "ICON": {
@@ -44,7 +44,7 @@ params["_fullmapWindow"];
                 _fullmapWindow drawIcon [_markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1];
             };
         };
-    };    
+    };
 } forEach allMapMarkers;
 
 
@@ -54,12 +54,12 @@ while {true} do {
     private _var = missionNamespace getVariable[format["ghostb_respawnPoint%1",_i],objNull];
     if (isNull _var) exitWith {};
     private _pos = (position _var);
-    
+
     if (_i isEqualTo _mousePos) then {
-        _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,0,0,0.5],_pos,40,40,0];   
+        _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,0,0,0.5],_pos,40,40,0];
     };
     _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,1,0,1],_pos,32,32,0,format["Respawn point %1",_i],1];
-    
+
     _i = _i + 1;
 };
 

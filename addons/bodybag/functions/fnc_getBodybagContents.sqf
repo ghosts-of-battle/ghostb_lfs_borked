@@ -10,7 +10,7 @@
  * Bodybag Contents <ARRAY>
  *
  * Example:
- * [cursorObject] call GHOSTB_bodybag_fnc_getBodybagContents
+ * [cursorObject] call ghostb_bodybag_fnc_getBodybagContents
  *
  * Public: Yes
  */

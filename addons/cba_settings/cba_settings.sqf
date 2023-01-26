@@ -727,7 +727,7 @@ force lambs_main_radioWest = 500;
 force KNB_book_aceAction = true;
 force KNB_panel_aceAction = true;
 
-// GHOSTB
+// ghostb
 ghostb_autotest_outputToRPT = false;
 
 // Ghost - AdminMenu

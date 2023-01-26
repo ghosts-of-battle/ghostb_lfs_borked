@@ -4,7 +4,7 @@ disableSerialization;
 params ["_display"];
 
 
-private _control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_FACTION);
+private _control = (_display displayCtrl IDC_ghostb_ADMINMENU_RESP_FACTION);
 lbClear _control;
 
 private _activeFactionCategory = GVAR(currentFactionCategory);

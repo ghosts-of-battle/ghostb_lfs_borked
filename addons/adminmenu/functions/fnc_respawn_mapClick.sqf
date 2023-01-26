@@ -3,7 +3,7 @@
 disableSerialization;
 
 params["_fullmapWindow","_type","_x","_y"];
-        
+
 if (_type == 0) then { // left click
     private _i = 1;
     private _found = false;

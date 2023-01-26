@@ -1,20 +1,20 @@
 class XtdGearModels {
     class CfgWeapons {
         class CamoBase;
-        class MCX_Virtus {
-            class Length {
-                values[] = {"14","11","9","6"};
-            };
-        };
-        class MCX_Virtus_GL: MCX_Virtus {
-            options[] = {"color","Stock"};
-        };
-        class MCX_Virtus_SIX12: MCX_Virtus {
-            options[] = {"color","Stock"};
-        };
-        class MCX_Rattler: MCX_Virtus {
-            options[] = {"color","Stock"};
-        };
+        // class MCX_Virtus {
+        //     class Length {
+        //         values[] = {"14","11","9","6"};
+        //     };
+        // };
+        // class MCX_Virtus_GL: MCX_Virtus {
+        //     options[] = {"color","Stock"};
+        // };
+        // class MCX_Virtus_SIX12: MCX_Virtus {
+        //     options[] = {"color","Stock"};
+        // };
+        // class MCX_Rattler: MCX_Virtus {
+        //     options[] = {"color","Stock"};
+        // };
 
         class milgp_battle_belt {
             class BeltCamo {
@@ -256,6 +256,58 @@ class XtdGearModels {
                     "wht"
                 };
             };
+        };
+    };
+};
+
+
+class XtdGearInfos {
+    class CfgWeapons {
+        class MCX_Virtus_16_g_s1 {
+            Caliber = "";
+            Length = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Virtus_14_g_s1 {
+            Caliber = "";
+            Length = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Virtus_11_g_s1 {
+            Caliber = "";
+            Length = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Virtus_9_g_s1 {
+            Caliber = "";
+            Length = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Virtus_14_gl_g_s1 {
+            Caliber = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Virtus_11_six12_g_s1 {
+            Caliber = "";
+            model = "";
+            color = "";
+            Stock = "";
+        };
+        class MCX_Rattler_556_g_s1 {
+            Caliber = "";
+            model = "";
+            color = "";
+            Stock = "";
         };
     };
 };

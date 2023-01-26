@@ -22,3 +22,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
+#include "XtdGear.hpp"

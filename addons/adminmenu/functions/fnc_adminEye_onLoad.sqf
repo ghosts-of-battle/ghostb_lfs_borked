@@ -3,7 +3,7 @@
 disableSerialization;
 
 
-private _mapCtrl = ((findDisplay IDC_GHOSTB_ADMINMENU_ADME_MAP_DISPLAY) displayCtrl IDC_GHOSTB_ADMINMENU_ADME_MAP_CONTROL);//_this select 0;//
+private _mapCtrl = ((findDisplay IDC_ghostb_ADMINMENU_ADME_MAP_DISPLAY) displayCtrl IDC_ghostb_ADMINMENU_ADME_MAP_CONTROL);//_this select 0;//
 private _pos = [0,0,0];
 
 if (alive player && !(player isKindOf "ghostb_spectator_unit")) then {

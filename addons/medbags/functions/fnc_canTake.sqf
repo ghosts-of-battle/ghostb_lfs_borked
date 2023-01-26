@@ -13,7 +13,7 @@
  * <BOOLEAN>
  *
  * Example:
- * [player] call GHOSTB_medical_supplies_fnc_canUnpackFirstAid;
+ * [player] call ghostb_medical_supplies_fnc_canUnpackFirstAid;
  *
  */
 

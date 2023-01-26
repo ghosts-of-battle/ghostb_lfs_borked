@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_removeChestpack;
+ * [player] call ghostb_boc_fnc_removeChestpack;
  *
  * Public: No
  */

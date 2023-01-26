@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [arrayOfStuff] call GHOSTB_bodybag_fnc_createBodybagBackup
+ * [arrayOfStuff] call ghostb_bodybag_fnc_createBodybagBackup
  *
  * Public: Yes
  */

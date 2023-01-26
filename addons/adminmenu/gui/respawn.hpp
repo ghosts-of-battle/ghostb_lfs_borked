@@ -1,22 +1,22 @@
 class Controls {
     class respawnMenuPlayersText: RscText {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_SPECTATORTEXT;
+        idc = IDC_ghostb_ADMINMENU_RESP_SPECTATORTEXT;
         text = "Players in Spectator: 0";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
         x = 0;
         y = 0;
-        w = GHOSTB_ADMINMENU_RESP_W_COL1;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL1;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class spectatorListBox: RscListBox {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_SPECTATORLIST;
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        sizeEx2 = GHOSTB_ADMINMENU_STD_SIZEX;
-        //rowHeight = 0.97 * GHOSTB_ADMINMENU_STD_HEIGHT;
-        //rowHeight = GHOSTB_ADMINMENU_STD_HEIGHT;
+        idc = IDC_ghostb_ADMINMENU_RESP_SPECTATORLIST;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+        sizeEx2 = ghostb_ADMINMENU_STD_SIZEX;
+        //rowHeight = 0.97 * ghostb_ADMINMENU_STD_HEIGHT;
+        //rowHeight = ghostb_ADMINMENU_STD_HEIGHT;
         //colorBackground[] = {0, 0, 0, 1};
         //shadow = 0;
         //itemSpacing = 0.05;
@@ -32,60 +32,60 @@ class Controls {
         itemSpacing = 0;
 
         tooltip = "tooltip test";
-        
+
         x = "0";
         y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL1;
+        w = ghostb_ADMINMENU_RESP_W_COL1;
         h = 0.308 * safezoneH;
     };
 
     class respawnMenuAddButton: GVAR(RscButtonMenu) {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_ADDBUTTON;
+        idc = IDC_ghostb_ADMINMENU_RESP_ADDBUTTON;
         text = "Add";
-        x = GHOSTB_ADMINMENU_RESP_X_COL2;
+        x = ghostb_ADMINMENU_RESP_X_COL2;
         y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL2;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL2;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
         onButtonClick=QUOTE((ctrlParent (param [0])) call FUNC(respawn_addAction));
     };
     class respawnMenuRemoveButton: GVAR(RscButtonMenu) {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_REMOVEBUTTON;
+        idc = IDC_ghostb_ADMINMENU_RESP_REMOVEBUTTON;
         text = "Remove";
-        x = GHOSTB_ADMINMENU_RESP_X_COL2;
+        x = ghostb_ADMINMENU_RESP_X_COL2;
         y = "2.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL2;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL2;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
         onButtonClick=QUOTE((ctrlParent (param [0])) call FUNC(respawn_removeAction));
     };
     class respawnMenuRscComboRole: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_ROLECOMBO;
+        idc = IDC_ghostb_ADMINMENU_RESP_ROLECOMBO;
         text = "Role";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL2;
+
+        x = ghostb_ADMINMENU_RESP_X_COL2;
         y = "3.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL2;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL2;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class RankText: RscText {
         idc = -1;
         text = "Unit rank:";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL2;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
+        x = ghostb_ADMINMENU_RESP_X_COL2;
         y = "4.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL2;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL2;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
-    
+
     class RankSelector: RscToolbox {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_RANK;
-        
+        idc = IDC_ghostb_ADMINMENU_RESP_RANK;
+
         style="0x02 + 0x30 + 0x800";
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         rows = 2;
         columns = 4;
         strings[]=
@@ -119,29 +119,29 @@ class Controls {
         colorSelectedBg[] = {1, 1, 1, 0.2};
         colorBackground[] = {0.5, 0.5, 0.5, 0.1};
 
-        x = GHOSTB_ADMINMENU_RESP_X_COL2;
+        x = ghostb_ADMINMENU_RESP_X_COL2;
         y = "5.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL2;
-        h = 2*GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL2;
+        h = 2*ghostb_ADMINMENU_STD_HEIGHT;
     };
 
     class respawnMenuVOIP: GVAR(RscButtonMenu) {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_SPECTATORVOIP;
+        idc = IDC_ghostb_ADMINMENU_RESP_SPECTATORVOIP;
         text = "Toggle Spectator VOIP";
-        x = GHOSTB_ADMINMENU_RESP_X_COL3;
+        x = ghostb_ADMINMENU_RESP_X_COL3;
         y = "0";
-        w = GHOSTB_ADMINMENU_RESP_W_COL3;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL3;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
         tooltip = "Toggles the spectator channel for you (ACRE/TFAR), so that you can talk to dead players if alive.";
         onButtonClick = QUOTE((ctrlParent (param [0])) call FUNC(respawn_toggleSpectatorVOIP));
     };
     class groupListBox: RscListBox {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_GROUPLIST;
+        idc = IDC_ghostb_ADMINMENU_RESP_GROUPLIST;
 
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        sizeEx2 = GHOSTB_ADMINMENU_STD_SIZEX;
-        //rowHeight = 0.97 * GHOSTB_ADMINMENU_STD_HEIGHT;
-        //rowHeight = GHOSTB_ADMINMENU_STD_HEIGHT;
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+        sizeEx2 = ghostb_ADMINMENU_STD_SIZEX;
+        //rowHeight = 0.97 * ghostb_ADMINMENU_STD_HEIGHT;
+        //rowHeight = ghostb_ADMINMENU_STD_HEIGHT;
         //colorBackground[] = {0, 0, 0, 1};
         //shadow = 0;
         //itemSpacing = 0.05;
@@ -158,146 +158,146 @@ class Controls {
 
         tooltip = "tooltip test";
 
-        x = GHOSTB_ADMINMENU_RESP_X_COL3;
+        x = ghostb_ADMINMENU_RESP_X_COL3;
         y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL3;
+        w = ghostb_ADMINMENU_RESP_W_COL3;
         h = 0.308 * safezoneH;
     };
 
     class respawnGroupDetailsText: RscText {
         idc = -1;
         text = "Group Details:";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL1;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL1;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class respawnMenuGroupNameText: RscEdit {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_GROUPNAME;
+        idc = IDC_ghostb_ADMINMENU_RESP_GROUPNAME;
         text = "INSERT_GROUP_NAME";
-        
+
         colorBackground[] = {0.5, 0.5, 0.5, 0.1};
         colorBorder[] = {1, 1, 1, 0.33};
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "2.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class respawnMenuFactionCategoryCombo: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_FACTIONCATEGORY;
+        idc = IDC_ghostb_ADMINMENU_RESP_FACTIONCATEGORY;
         text = "FactionCategory"; /*Formerly side */
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "3.3 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class respawnMenuFactionCombo: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_FACTION;
+        idc = IDC_ghostb_ADMINMENU_RESP_FACTION;
         text = "Faction";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "4.4 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class respawnMenuSideCombo: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_SIDE;
+        idc = IDC_ghostb_ADMINMENU_RESP_SIDE;
         text = "Side";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "5.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
-    
+
     class respawnMenuSpawnMarkerText: RscText {
         idc = -1;
         text = "Spawn with ORBAT marker?";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "7.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class respawnMenuGroupMarkerCheckbox: RscCheckBox {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_GROUPMARKERCHECKBOX;
+        idc = IDC_ghostb_ADMINMENU_RESP_GROUPMARKERCHECKBOX;
         text = "Give group marker";
-        x = GHOSTB_ADMINMENU_RESP_X_COL4 + (7 * (((safezoneW / safezoneH) min 1.2) / 40));
+        x = ghostb_ADMINMENU_RESP_X_COL4 + (7 * (((safezoneW / safezoneH) min 1.2) / 40));
         y = "7.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
         w = (1 * (((safezoneW / safezoneH) min 1.2) / 40));
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
         //action = "['respawnMenuToggleGroupCheckbox'] spawn ghostb_respawn_fnc_handleRespawnUI";
     };
     class respawnMenuMarkerName: RscEdit {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_GROUPMARKERNAME;
+        idc = IDC_ghostb_ADMINMENU_RESP_GROUPMARKERNAME;
         text = "INSERT_MARKER_NAME";
-        
+
         // colorBackground[] = {0.5, 0.5, 0.5, 0.1};
         // colorBorder[] = {1, 1, 1, 0.33};
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "8.8 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
-    
-    
+
+
         //Marker combo boxs
     class MarkerTypeCombo: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_MARKERTYPE;
+        idc = IDC_ghostb_ADMINMENU_RESP_MARKERTYPE;
         text = "Side";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "9.9 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
     class MarkerColourCombo: RscCombo {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_MARKERCOLOUR;
+        idc = IDC_ghostb_ADMINMENU_RESP_MARKERCOLOUR;
         text = "Side";
-        
-        sizeEx = GHOSTB_ADMINMENU_STD_SIZEX;
+
+        sizeEx = ghostb_ADMINMENU_STD_SIZEX;
         font = "RobotoCondensed";
-        
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "11 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
     };
-    
+
     class respawnMenuSpawnButton: GVAR(RscButtonMenu) {
-        idc = IDC_GHOSTB_ADMINMENU_RESP_SPAWNBUTTON;
+        idc = IDC_ghostb_ADMINMENU_RESP_SPAWNBUTTON;
         text = "Spawn Group";
-        x = GHOSTB_ADMINMENU_RESP_X_COL4;
+        x = ghostb_ADMINMENU_RESP_X_COL4;
         y = "19 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) + (safezoneY + (safezoneH - (((safezoneW / safezoneH) min 1.2) / 1.2))/2)";
-        w = GHOSTB_ADMINMENU_RESP_W_COL4;
-        h = GHOSTB_ADMINMENU_STD_HEIGHT;
-        
+        w = ghostb_ADMINMENU_RESP_W_COL4;
+        h = ghostb_ADMINMENU_STD_HEIGHT;
+
         onButtonClick=QUOTE((ctrlParent (param [0])) call FUNC(respawn_respawnButton));
     };
-    
+
 
 
     // class respawnMenuCloseButton: GVAR(RscButtonMenu)

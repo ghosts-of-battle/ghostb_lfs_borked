@@ -1,6 +1,6 @@
-class GHOSTB_Equipment {
+class ghostb_Equipment {
 
-    tag = "GHOSTB";
+    tag = "ghostb";
     class Equipment {
 
         file = "z\ghostb\addons\equipment\Functions";

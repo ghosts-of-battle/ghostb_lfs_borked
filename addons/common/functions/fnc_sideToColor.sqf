@@ -11,7 +11,7 @@
  * Description:
  * Will return the color of the inputted side.
  */
- 
+
 //Cache vars for speed
 if (isNil "ghostb_common_blufor_color") then {
     ghostb_common_blufor_color = [blufor] call bis_fnc_sideColor;

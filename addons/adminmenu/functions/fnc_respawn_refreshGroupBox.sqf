@@ -3,7 +3,7 @@
 disableSerialization;
 params ["_display"];
 
-private _ctrlGroupListBox = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_GROUPLIST);
+private _ctrlGroupListBox = (_display displayCtrl IDC_ghostb_ADMINMENU_RESP_GROUPLIST);
 lbClear _ctrlGroupListBox;
 
 {

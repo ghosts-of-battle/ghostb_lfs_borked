@@ -4,13 +4,13 @@ disableSerialization;
 params ["_utilityFunction", "_utilityName", ["_args", 0]];
 
 if (isNil _utilityFunction) exitWith {
-    systemChat format ["[GHOSTB Admin Menu] Modal utility with name '%1' requires undefined function '%2'", _utilityName, _utilityFunction];
+    systemChat format ["[ghostb Admin Menu] Modal utility with name '%1' requires undefined function '%2'", _utilityName, _utilityFunction];
 };
 
 GVAR(utilityData) = [];
 private _exit = false;
 
-if ((missionNamespace getVariable [QGVAR(selectedTab), -1]) isEqualTo IDC_GHOSTB_ADMINMENU_G_PMAN) then {
+if ((missionNamespace getVariable [QGVAR(selectedTab), -1]) isEqualTo IDC_ghostb_ADMINMENU_G_PMAN) then {
     GVAR(utilityData) = GVAR(playerManagement_selected) apply {_x call BIS_fnc_objectFromNetId};
 
     _exit = count GVAR(utilityData) == 0;
@@ -21,7 +21,7 @@ if ((missionNamespace getVariable [QGVAR(selectedTab), -1]) isEqualTo IDC_GHOSTB
 };
 
 if (_exit) exitWith {
-    systemChat "[GHOSTB Admin Menu] No valid player(s) selected for the action!";
+    systemChat "[ghostb Admin Menu] No valid player(s) selected for the action!";
 };
 
 GVAR(modalDetails) = [_utilityFunction, _utilityName, _args];

@@ -12,7 +12,7 @@
  * nothing
  *
  * Example:
- * [] call GHOSTB_hints_fnc_initialize;
+ * [] call ghostb_hints_fnc_initialize;
  *
  */
 
@@ -56,4 +56,4 @@ if (Not hasInterface) exitWith {};
 //("ghostb_RscHint" call BIS_fnc_rscLayer) cutRsc ["ghostb_RscHint", "PLAIN", 0, true];
 99 cutRsc ["ghostb_RscHint", "PLAIN", 0, true];
 
-[] call GHOSTB_hints_fnc_cleanup;
+[] call ghostb_hints_fnc_cleanup;

@@ -43,7 +43,7 @@ class CfgWeapons {
         cursorAim = "EmptyCursor";
         cursorAimOn = "CursorAimOn";
         showSwitchAction = 1;
-        weaponInfoType = "GHOSTB_RscOptics_vector";
+        weaponInfoType = "ghostb_RscOptics_vector";
         class WeaponSlotsInfo {
             mass = 20;
         };

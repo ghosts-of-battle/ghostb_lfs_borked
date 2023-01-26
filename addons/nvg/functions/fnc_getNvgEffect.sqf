@@ -19,13 +19,13 @@ private _nvgBlacklist    = ghostb_nvg_Blacklist; // nvg blacklist
 private _effect = [];
 
 if !((hmd player) in _nvgBlacklist) then {
-  if !(_effectSelection isEqualTo "") then {
-      _effect = (
-      configFile >> "CfgEffects" >> format [
-          "%1%2", _effectSelection, ["", "Ace"] select ghostb_nvg_ACE
-      ]
-    ) call BIS_fnc_returnConfigEntry;    // selected effect
-  };
+    if !(_effectSelection isEqualTo "") then {
+        _effect = (
+        configFile >> "CfgEffects" >> format [
+            "%1%2", _effectSelection, ["", "Ace"] select ghostb_nvg_ACE
+        ]
+        ) call BIS_fnc_returnConfigEntry;    // selected effect
+    };
 };
 
 _return = _effect;

@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineResinclDesign.inc"
 /*
  * Author: veteran29
- * Initializes loading screen display and adds GHOSTB branding.
+ * Initializes loading screen display and adds ghostb branding.
  *
  * Arguments:
  * 0: Loading display <DISPLAY>

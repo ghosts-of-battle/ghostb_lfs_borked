@@ -19,13 +19,13 @@ if (_network > -1 && !(_presetName isEqualTo _oldPresetName)) then {
 {
     if (player canAdd _radio) then {
         player addItem _radio;
-        systemChat format ["[GHOSTB] Added radio: %1", _radio];
+        systemChat format ["[ghostb] Added radio: %1", _radio];
     } else {
         if (getContainerMaxLoad uniform player > 0) then {
             (uniformContainer player) addItemCargoGlobal [_radio, 1];
-            systemChat format ["[GHOSTB] Added radio (exceeds inventory capacity): %1", _radio];
+            systemChat format ["[ghostb] Added radio (exceeds inventory capacity): %1", _radio];
         } else {
-            systemChat format ["[GHOSTB] Couldn't add radio: %1", _radio];
+            systemChat format ["[ghostb] Couldn't add radio: %1", _radio];
         };
 
         // TODO: give addaction?

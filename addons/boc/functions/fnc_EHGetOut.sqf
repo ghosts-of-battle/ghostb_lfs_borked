@@ -12,7 +12,7 @@
  * Nothing
  *
  * Example:
- * _this call GHOSTB_boc_fnc_EHGetOut;
+ * _this call ghostb_boc_fnc_EHGetOut;
  *
  * Public: No
  */

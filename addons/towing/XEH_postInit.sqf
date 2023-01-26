@@ -46,22 +46,22 @@ if (GVAR(medicalvehicle)) then {
         _vehicle addItemCargoGlobal ["ACE_bodyBag", 2];
         _vehicle addItemCargoGlobal ["ToolKit", 1];
         _vehicle addItemCargoGlobal ["Attachable_Helistretcher", 2];
-        _vehicle addItemCargoGlobal ["GHOSTB_medbags_MedicKit", 1];
+        _vehicle addItemCargoGlobal ["ghostb_medbags_MedicKit", 1];
         _vehicle addItemCargoGlobal ["ACE_surgicalKit", 4];
         _vehicle addItemCargoGlobal ["kat_accuvac", 2];
         _vehicle addItemCargoGlobal ["ACE_personalAidKit", 1];
         _vehicle addItemCargoGlobal ["ghostb_medbags_Trauma", 4];
         }, true, [], true] call CBA_fnc_addClassEventHandler;
     } forEach [
-        "ghostb_helicopters_uh60M_med", 
-        "vtx_UH60M_MEDEVAC", 
-        "rhsusf_M1230a1_usarmy_d", 
-        "rhsusf_M1230a1_usarmy_wd", 
-        "rhsusf_m113_usarmy_medical", 
-        "RHS_UH60M_MEV", 
-        "RHS_UH60M_MEV2", 
-        "RHS_UH60M_MEV_d", 
-        "RHS_UH60M_MEV2_d", 
+        "ghostb_helicopters_uh60M_med",
+        "vtx_UH60M_MEDEVAC",
+        "rhsusf_M1230a1_usarmy_d",
+        "rhsusf_M1230a1_usarmy_wd",
+        "rhsusf_m113_usarmy_medical",
+        "RHS_UH60M_MEV",
+        "RHS_UH60M_MEV2",
+        "RHS_UH60M_MEV_d",
+        "RHS_UH60M_MEV2_d",
         "rhsusf_m113d_usarmy_medical"
     ];
 };

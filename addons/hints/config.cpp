@@ -3,7 +3,7 @@
 
 class CfgPatches {
 
-    class GHOSTB_Hints {
+    class ghostb_Hints {
         author = QAUTHOR;
         name = COMPONENT_NAME;
         url = URL;

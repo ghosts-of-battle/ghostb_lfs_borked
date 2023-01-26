@@ -1,18 +1,18 @@
 #include "script_component.hpp"
 
-if (isNil QEGVAR(common,GHOSTB_enabled) || !(EGVAR(common,GHOSTB_enabled))) exitWith {};
+if (isNil QEGVAR(common,ghostb_enabled) || !(EGVAR(common,ghostb_enabled))) exitWith {};
 
 if !(hasInterface) exitWith {};
 
 call FUNC(arsenal_postInit);
 
-GHOSTB_unit setVariable [QGVAR(preventProne),false,true];
+ghostb_unit setVariable [QGVAR(preventProne),false,true];
 
 [{
     if (
-        (stance GHOSTB_unit) == "PRONE" && {GHOSTB_unit getvariable [QGVAR(preventProne),false]} && {!(GHOSTB_unit getVariable ["ACE_isUnconscious", false]) || lifeState GHOSTB_unit != "INCAPACITATED"}
+        (stance ghostb_unit) == "PRONE" && {ghostb_unit getvariable [QGVAR(preventProne),false]} && {!(ghostb_unit getVariable ["ACE_isUnconscious", false]) || lifeState ghostb_unit != "INCAPACITATED"}
        ) then {
-        GHOSTB_unit playAction "PlayerCrouch";
-        hint localize "str_GHOSTB_boc_crouch";
+        ghostb_unit playAction "PlayerCrouch";
+        hint localize "str_ghostb_boc_crouch";
     };
 },1] call CBA_fnc_addPerFrameHandler;

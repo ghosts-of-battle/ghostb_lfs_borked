@@ -48,9 +48,9 @@ if (_type == 28) then {
         GVAR(selectedRespawnGroup) = [];
 
         // Close the Map
-        ((findDisplay IDC_GHOSTB_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_GHOSTB_ADMINMENU_RESP_MAP_CONTROL) ctrlShow false;
-        ((findDisplay IDC_GHOSTB_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_GHOSTB_ADMINMENU_RESP_MAP_CONTROL) mapCenterOnCamera false;
-        closeDialog IDC_GHOSTB_ADMINMENU_RESP_MAP_DISPLAY;
+        ((findDisplay IDC_ghostb_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_ghostb_ADMINMENU_RESP_MAP_CONTROL) ctrlShow false;
+        ((findDisplay IDC_ghostb_ADMINMENU_RESP_MAP_DISPLAY) displayCtrl IDC_ghostb_ADMINMENU_RESP_MAP_CONTROL) mapCenterOnCamera false;
+        closeDialog IDC_ghostb_ADMINMENU_RESP_MAP_DISPLAY;
     };
 };
 //SPACEBAR (HALO TOGGLE)

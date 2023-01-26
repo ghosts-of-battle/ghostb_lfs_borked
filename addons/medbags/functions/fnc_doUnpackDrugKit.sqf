@@ -13,7 +13,7 @@
  * nothing
  *
  * Example:
- * [player] call GHOSTB_medical_supplies_fnc_doUnpackDrugKit;
+ * [player] call ghostb_medical_supplies_fnc_doUnpackDrugKit;
  *
  */
 
@@ -42,20 +42,20 @@ if (isNull _unit) exitWith {};
         playSound3D ["z\ghostb\addons\medbags\data\sounds\medickit_open_1.ogg", _unit]
     };
 
-    GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
-    GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = false;
+    ghostb_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
+    ghostb_MEDICAL_SUPPLIES_UNPACK_FAILURE = false;
 
     [
         2,
-        [], { GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
+        [], { ghostb_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; }, { ghostb_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
         localize "Unpack Drug Kit....",
  {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
 
-    waitUntil {if ((GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS) || (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE)) exitWith {true}; false};
+    waitUntil {if ((ghostb_MEDICAL_SUPPLIES_UNPACK_SUCCESS) || (ghostb_MEDICAL_SUPPLIES_UNPACK_FAILURE)) exitWith {true}; false};
 
-    if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS) exitWith {
+    if (ghostb_MEDICAL_SUPPLIES_UNPACK_SUCCESS) exitWith {
 
         _unit removeItem "ghostb_medbags_DrugKit";
 

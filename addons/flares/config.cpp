@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-#ifndef GHOSTB_LEAN_RHS_CUP_HLC
+#ifndef ghostb_LEAN_RHS_CUP_HLC
 
 class CfgPatches {
     class ADDON {

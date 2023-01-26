@@ -11,7 +11,7 @@ successful: number of the slot; error: -1 <NUMBER>
 
 Example:
 
-call GHOSTB_fnc_arsenal;
+call ghostb_fnc_arsenal;
 "ItemcTab",
 "ItemAndroid",
 "ItemcTabHCam",

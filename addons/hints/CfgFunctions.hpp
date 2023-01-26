@@ -1,6 +1,6 @@
 class CfgFunctions {
 
-    class GHOSTB_Hints {
+    class ghostb_Hints {
 
         tag = "ghostb_hints";
 
@@ -13,7 +13,7 @@ class CfgFunctions {
 
     };
 
-    class GHOSTB_Hints_Functions {
+    class ghostb_Hints_Functions {
 
         tag = "ghostb";
 
@@ -25,7 +25,7 @@ class CfgFunctions {
 
     };
 
-    class GHOSTB_Hints_ACE {
+    class ghostb_Hints_ACE {
 
         tag = "ace_common";
 
@@ -44,7 +44,7 @@ class CfgFunctions {
 
     };
 
-    class GHOSTB_Hints_CBA {
+    class ghostb_Hints_CBA {
 
         tag = "cba";
 

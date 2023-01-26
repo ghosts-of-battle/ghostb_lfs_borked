@@ -3,9 +3,9 @@ class RscNotepad {
     enableSimulation = 1;
     closeOnMissionEnd = 0;
     scriptName = "RscNotepad";
-    scriptPath = "GHOSTBisplays";
-    onLoad = "[""onLoad"",_this,""RscNotepad"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload = "[""onUnload"",_this,""RscNotepad"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    scriptPath = "ghostbisplays";
+    onLoad = "[""onLoad"",_this,""RscNotepad"",'ghostbisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    onUnload = "[""onUnload"",_this,""RscNotepad"",'ghostbisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
     onMouseButtonDown = "\
         if ((_this select 1) != 0) exitWith { \
             _ctrl = ((_this select 0) displayCtrl 1004); \
